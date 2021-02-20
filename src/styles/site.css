@@ -7,10 +7,31 @@
     overflow: hidden;
 }
 
-    .headerVideo .container {
-        position: relative;
-        z-index: 2;
+hr {
+    border-top: 5px solid #999;
+}
+
+.fadeIn {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
     }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.headerVideo .container {
+    position: relative;
+    z-index: 2;
+}
 
 .headerVideo .overlay {
     position: absolute;
