@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="imgs/server-icon.png" />
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>PROJECT Spellforged</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <a class="navbar-brand" href="#">PROJECT Spellforged</a>
+        <a class="navbar-brand" href="#">< PROJECT Spellforged ></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,6 +54,9 @@
             <p>
                 We are determined to host and deliver an incredible Minecraft RPG that all types of players can adventure in.
                 Whether you love to feel the thrill of combat, or explore the world with your friends to find loot and adventure, PROJECT Spellforged will have something in store for everyone to enjoy.
+            </p>
+            <p>
+                <a href="https://discord.gg/jJVEYpW"><i class="fab fa-discord"></i> Join Our Discord</a>  •  <a href="https://www.youtube.com/watch?v=cNRx043R4rA"><i class="fab fa-youtube"></i> First Look</a>
             </p>
         </div>
 
@@ -348,7 +352,7 @@
                                                 This system allows you to use the Swap Key (Usually keybound to F) to prime an ability cast, then press a respective keybind to activate the skill. Passives do not take up an Ability Slot.
                                             </p>
                                             <p>
-                                                With this system and the proper Option toggled on, casting all of your abilities is 2 inputs away. The available inputs you have are as followed:
+                                                With this system and the proper Game Options toggled on, casting all of your abilities is 2 key inputs away. The available inputs you have are as followed:
                                             </p>
                                             <table class="table">
                                                 <thead>
@@ -363,25 +367,25 @@
                                                     <tr>
                                                         <th scope="row">1</th>
                                                         <td>Swap Key + Left Click</td>
-                                                        <td>5</td>
+                                                        <th scope="row">5</th>
                                                         <td>Swap Key + Sneak + Left Click</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">2</th>
                                                         <td>Swap Key + Right Click</td>
-                                                        <td>6</td>
+                                                        <th scope="row">6</th>
                                                         <td>Swap Key + Sneak + Right Click</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">3</th>
                                                         <td>Swap Key + Drop Key</td>
-                                                        <td>7</td>
+                                                        <th scope="row">7</th>
                                                         <td>Swap Key + Sneak + Drop Key</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">4</th>
                                                         <td>Swap Key + Swap Key</td>
-                                                        <td>8</td>
+                                                        <th scope="row">8</th>
                                                         <td>Swap Key + Sneak + Swap Key</td>
                                                     </tr>
                                                 </tbody>
@@ -468,29 +472,12 @@
                                                 Movement can be a large reason of why combat is fun and intense. Some enemy attacks may need both speed and reaction time in order to evade them.
                                             </p>
                                             <p>
-                                                PROJECT Spellforged has implemented a simple, yet useful mechanic called <b>Sprint Dashing.</b> This will give you a large, yet quick-fading burst of speed when you begin sprinting. This allows you to
+                                                PROJECT Spellforged has implemented a simple, yet useful mechanic called <b>Sprint Dashing.</b> This will give you a large, quick-fading burst of speed when you begin sprinting. This allows you to
                                                 dodge attacks faster and in a stylized manner.
                                             </p>
                                             <p>
                                                 Sprint Dashing isn't unlimited though, and has a short cooldown attached to it. Be sure you time it wisely, otherwise you may find yourself taking a hit you won't be able to withstand...
                                             </p>
-
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Name</th>
-                                                        <th scope="col">Description</th>
-                                                        <th scope="col">Cooldown</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">Sprint Dash</th>
-                                                        <td>When you begin sprinting, grants you 80% Movement Speed that fades rapidly over 1.5 seconds.</td>
-                                                        <td>3 seconds</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                         </div>
 
                                         <div class="col-sm">
@@ -524,12 +511,175 @@
             <div class="row">
 
                 <div class="col-sm">
-                    <h2>Powerful Items</h2>
+                    <h2>Expansive Item System</h2>
                     While exploring the world and doing Quests, you will come across equipment that will enhance your power, or items that will enhance your equipment.
                     <br />
                     Use these to your advantage. Refine, Reforge, and Enchant your items to boost your power and give yourself unique strengths found only in this world. If you empower your equipment, you will go from strength to strength continuously.
                     <br />
                     But be warned, the greatest treasures lie in the darkest depths...
+
+                    <br />
+                    <br />
+                    <br />
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itemsModal">
+                        Learn More
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="itemsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Expansive Item System</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        <b>Items and their strengths are important in PROJECT Spellforged.</b> Many items you will find in the world have a use or purpose besides being sold to a vendor for money.
+                                    </p>
+
+                                    <hr />
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <h5>Accessories - The Third Equipment Type</h5>
+                                                <p>
+                                                    Accessory Types: <b>Trinkets, Gemstones, Rings, Charms</b>
+                                                </p>
+                                                <p>
+                                                    While Weapons grant you damage output and Armor improves your defenses and Attributes, Accessories are a third equipment type that will allow you to enhance your character in a different style.
+                                                </p>
+                                                <p>
+                                                    <b>Accessories give you unique Stats not typically found on other equipment types,</b> such as Mana Regen, Critical Strike Chance, and Threat Generation. These stats can affect your playstyle depending on what you wear.
+                                                </p>
+                                                <p>
+                                                    When exploring the world, be sure to look out for these kinds of items. Accessories can be crucial to your playstyle depending on what you need the most.
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <img src="imgs/gem.jpg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <img src="imgs/accessories.jpg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <h5>Item Enhancements - Customize your Equipment</h5>
+                                                <p>
+                                                    Enhancement Styles: <b>Refinements, Reforges, Enchantments</b>
+                                                </p>
+                                                <p>
+                                                    You will not only find normal Equipment in the world, but also items and places that can be used to enhance them, such as <b>Refinement Materials</b> or <b>Enchantment Altars.</b> The power that these can give
+                                                    to your equipment can effectively change or enhance how you play.
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <b>Refinements</b> upgrade your equipment's base stats directly. They can improve a Weapon's Damage, an Armor piece's defensive stats, or an Accessory's stat. Equipment can be refined multiple times at the cost
+                                                        of either Refinement Materials, or using other Equipment.
+                                                    </li>
+                                                    <li>
+                                                        <b>Reforges</b> grant your equipment additional sub-stats, allowing you to customize what attributes it will grant you. Weapons, Equipment, and Accessories can be reforged.
+                                                    </li>
+                                                    <li>
+                                                        <b>Enchantments</b> are unique empowerments of your equipment. Rather than improving its stats, Enchantments grant you special abilities while you wear the equipment that has them. You can obtain them
+                                                        by finding Enchantment Altars out in the world, and offering specific items to enchant. Equipment can only have 1 Enchantment on them at a time.
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="col-sm">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <img src="imgs/enhancements.jpg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <h5>Using Equipment - Nonrestrictive System</h5>
+                                                <p>
+                                                    What you can use: <b>Everything!</b>
+                                                </p>
+                                                <p>
+                                                    As you fill up your Bank, you will find many types of Equipment and Weapons. PROJECT Spellforged has very few restrictions on equipment usage, allowing you to create diverse item builds.
+                                                </p>
+                                                <p>
+                                                    All classes can melee attack with all Weapon Types and equip all types of armor. Utilize Bows as a Warrior to pick off enemies from afar, or save yourself a Dagger as a Caster for your last resort.
+                                                </p>
+                                                <p>
+                                                    There are only 2 kinds of restrictions to wearing equipment: <b>Level Requirement </b>and<b> Equipment Weight.</b>
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        All Equipment has a <b>Level Requirement</b> attached to them. Not meeting this requirement will prevent you from using the equipment, and you will not gain any stats from them.
+                                                    </li>
+                                                    <li>
+                                                        <b>Equipment Weight</b> is a flexible system where Weapons and Armor have a Weight value attached to them, and each class has a preset Weapon and Armor Weight maximum. These values add on whenever you are using them, and going over the capacity of either 
+                                                        your Weapon Weight or Armor Weight will invoke penalties. However, they don't prevent you from wielding 2 Greatswords...
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="col-sm">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <img src="imgs/weight.jpg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <img src="imgs/shield.jpg" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-sm">
