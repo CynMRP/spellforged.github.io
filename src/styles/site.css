@@ -1,84 +1,83 @@
 ﻿.headerVideo {
-    position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 hr {
-    border-top: 5px solid #999;
+  border-top: 5px solid #999;
 }
 
 .fadeIn {
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-
 .headerVideo .container {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .headerVideo .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 video {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .cardHeader {
-    color: dodgerblue;
-    text-decoration: underline;
+  color: dodgerblue;
+  text-decoration: underline;
 }
 
 .cardSubHeader {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 .resumeHeader {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .resumeSubject {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .smallImg {
-    width: 50%;
-    height: 80%;
+  width: 50%;
+  height: 80%;
 }
 
 .orangeText {
-    color : orange;
+  color: orange;
 }
 
 #pageTitle {
-    color: orange;
+  color: orange;
 }
 
-p[name=info] {
-    color: yellow;
+p[name="info"] {
+  color: yellow;
 }
