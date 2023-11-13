@@ -1,83 +1,195 @@
-﻿.headerVideo {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto';
 }
 
 hr {
-  border-top: 5px solid #999;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.headerVideo {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+hr {
+    border-top: 5px solid #999;
 }
 
 .fadeIn {
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 
-  100% {
-    opacity: 1;
-  }
+    100% {
+        opacity: 1;
+    }
 }
 
 .headerVideo .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .headerVideo .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
 }
 
+/* Both video and img need fixing, original sizing was smaller but flexbox moment */
 video {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.2s;
 }
+
+img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    height: auto;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+video:hover,
+img:hover {
+    transform: scale(1.025);
+}
+
 
 .cardHeader {
-  color: dodgerblue;
-  text-decoration: underline;
+    color: dodgerblue;
+    text-decoration: underline;
 }
 
 .cardSubHeader {
-  color: dodgerblue;
+    color: dodgerblue;
 }
 
 .resumeHeader {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .resumeSubject {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .smallImg {
-  width: 50%;
-  height: 80%;
+    width: 50%;
+    height: 80%;
 }
 
 .orangeText {
-  color: orange;
+    color: orange;
 }
 
 #pageTitle {
-  color: orange;
+    color: orange;
 }
 
 p[name="info"] {
-  color: yellow;
+    color: yellow;
 }
+
+.modalButton {
+    font-size: larger !important;
+    color: white !important;
+    background-color: dodgerblue !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.modalButton:hover {
+    animation: shine 0.2s forwards;
+    background-color: #00BFFF !important;
+    transform: scale(1.025);
+}
+
+@keyframes shine {
+    0% {
+        border-color: dodgerblue;
+    }
+
+    50% {
+        border-color: #FFFFFF;
+    }
+
+    100% {
+        border-color: #00BFFF;
+    }
+}
+
+.textBox {
+    color: white;
+    background-color: rgba(31, 31, 31, 0.8);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.heroBanner {
+    position: relative;
+    overflow: hidden;
+}
+
+.heroBanner:hover::before {
+    filter: blur(0px);
+}
+
+.heroBanner::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(1.5px);
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+.classesHero::before {
+    background-image: url('/hero/classes.png') !important;
+}
+
+.combatHero::before {
+    background-image: url('/hero/combat.png') !important;
+}
+
+.itemsHero::before {
+    background-image: url('/hero/items.png') !important;
+}
+
+.worldHero::before {
+    background-image: url('/hero/world.png') !important;
+}
+
+/* This is a complete mess. */
+/* Apply .heroBanner as generic class for formatting, and a
+::before with custom background image to apply the image */
