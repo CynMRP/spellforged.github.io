@@ -1,15 +1,23 @@
-// vite.config.js
-import { resolve } from "path";
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { fileURLToPath } from 'url'
+import path from 'path'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        apply: resolve(__dirname, "apply/index.html"),
-        faq: resolve(__dirname, "faq/index.html"),
-      },
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
     },
   },
-});
+  server: {
+    port: 3587,
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+  }
+})

@@ -1,1247 +1,225 @@
 ﻿<!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <link rel="icon" href="/imgs/server-icon.png" />
-  <meta charset="utf-8" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="PROJECT Spellforged" />
-  <meta property="og:title" content="PROJECT Spellforged - A Unique Minecraft MMORPG Experience" />
-  <meta property="og:description"
-    content="PROJECT Spellforged is an upcoming open-world MMORPG Server for Minecraft: Java Edition." />
-  <meta property="og:image" content="https://i.imgur.com/xgkeQ69.png" />
-  <link rel="stylesheet" href="./src/styles/site.css">
-  <title>PROJECT Spellforged</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spellforged - A Minecraft MMORPG Experience</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="src/styles/site.css" rel="stylesheet">
 </head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-    <a class="navbar-brand" href="#"> &lt; PROJECT Spellforged &gt;</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/"><i class="fas fa-home"></i> Home
-            <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="faq/"><i class="fas fa-question"></i> FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="apply/"><i class="fas fa-hammer"></i> Apply</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.youtube.com/watch?v=wRbPtMJWmSg"><i class="fab fa-youtube"></i> Latest
-            Video</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://discord.gg/jJVEYpW"><i class="fab fa-discord"></i> Join Our
-            Discord</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="headerVideo" style="background-image: url('imgs/header.png'); height: 800px">
-    <div class="overlay"></div>
-    <div class="container h-100">
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white fadeIn">
-            <h1 class="display-3">&lt; PROJECT Spellforged &gt;</h1>
-            <p class="lead mb-0">
-              &lt; A Unique Minecraft MMORPG Experience &gt;
-            </p>
-          </div>
+<body class="text-white">
+    <nav class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg rpg-border">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold gradient-text medieval-font">Spellforged</div>
+                <div class="hidden md:flex space-x-8">
+                  <a href="../#features" class="hover:text-purple-400 transition">Features</a>
+                  <a href="../#classes" class="hover:text-purple-400 transition">Classes</a>
+                  <a href="../#combat" class="hover:text-purple-400 transition">Combat</a>
+                  <a href="../#items" class="hover:text-purple-400 transition">Items</a>
+                    <a href="/faq/" class="hover:text-purple-400 transition">FAQ</a>
+                    <a href="/apply/" class="hover:text-purple-400 transition">Apply</a>
+                    <a href="https://discord.gg/jJVEYpW" class="glow-effect bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg transition">Join Discord</a>
+                </div>
+            </div>
         </div>
+    </nav>
+
+    <section class="hero min-h-screen flex items-center justify-center text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="medieval-font text-6xl md:text-7xl font-bold mb-8 animate-float gradient-text">Spellforged</h1>
+            <p class="text-xl md:text-2xl mb-12 text-gray-300">A Unique Minecraft MMORPG Experience</p>
+            <div class="ip-box inline-block px-8 py-4 rounded-lg" onclick="copyIP()">
+                <p class="text-lg">Server IP: <span class="text-purple-400">spellforged.coming.soon</span></p>
+                <p class="text-sm text-gray-400 mt-2">Click to copy</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="medieval-font text-4xl font-bold mb-16 text-center gradient-text">Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card rounded-lg p-8">
+                    <h3 class="medieval-font text-2xl font-bold mb-4">Immersive World</h3>
+                    <p class="text-gray-300">Explore the vast world of Sira, a land teeming with magic and adventures. Uncover lost treasures and face powerful foes.</p>
+                </div>
+                <div class="feature-card rounded-lg p-8">
+                    <h3 class="medieval-font text-2xl font-bold mb-4">Deep Class System</h3>
+                    <p class="text-gray-300">Choose from 5 unique classes with 3 specializations each. Master over 100 skills and create your perfect playstyle.</p>
+                </div>
+                <div class="feature-card rounded-lg p-8">
+                    <h3 class="medieval-font text-2xl font-bold mb-4">Dynamic Combat</h3>
+                    <p class="text-gray-300">Experience fluid combat with features like dashing, shielding, and parrying. Team up with others to tackle challenging foes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="medieval-font text-4xl font-bold mb-16 text-center gradient-text">Classes</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="medieval-font text-3xl font-bold mb-6">Master Your Path</h3>
+                    <p class="text-gray-300 mb-6">Whether you prefer to be on the frontlines protecting allies or providing ranged support from afar, there's a perfect class waiting for you.</p>
+                    <div class="rpg-border rounded-lg overflow-hidden">
+                        <video class="w-full" autoplay loop muted playsinline>
+                            <source src="imgs/slayer.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="feature-card rounded-lg p-6">
+                        <h4 class="medieval-font text-xl font-bold mb-2">Warrior</h4>
+                        <p class="text-gray-300">Masters of close combat, wielding heavy weapons with devastating effect.</p>
+                    </div>
+                    <div class="feature-card rounded-lg p-6">
+                        <h4 class="medieval-font text-xl font-bold mb-2">Mage</h4>
+                        <p class="text-gray-300">Harness powerful magic to destroy enemies and support allies.</p>
+                    </div>
+                    <div class="feature-card rounded-lg p-6">
+                        <h4 class="medieval-font text-xl font-bold mb-2">Ranger</h4>
+                        <p class="text-gray-300">Expert marksmen who excel at ranged combat and mobility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="combat" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="medieval-font text-4xl font-bold mb-16 text-center gradient-text">Dynamic Combat</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="rpg-border rounded-lg overflow-hidden">
+                    <video class="w-full" autoplay loop muted playsinline>
+                        <source src="imgs/combat.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3 class="medieval-font text-3xl font-bold mb-6">Epic Battles Await</h3>
+                    <p class="text-gray-300 mb-6">Experience fluid combat with unique abilities, combos, and tactical gameplay. Team up with other players to tackle challenging world bosses and dungeons.</p>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-center"><span class="text-purple-400 mr-2">→</span> Advanced combat mechanics</li>
+                        <li class="flex items-center"><span class="text-purple-400 mr-2">→</span> Unique skill combinations</li>
+                        <li class="flex items-center"><span class="text-purple-400 mr-2">→</span> Team-based challenges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="items" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="medieval-font text-4xl font-bold mb-16 text-center gradient-text">Expansive Item System</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="medieval-font text-3xl font-bold mb-6">Forge Your Legend</h3>
+                    <p class="text-gray-300 mb-6">Discover powerful equipment and enhance your arsenal through an extensive item system. Each piece of gear can be refined and customized to match your playstyle.</p>
+                    <div class="feature-card rounded-lg p-6">
+                        <h4 class="medieval-font text-xl font-bold mb-2">Enhancement System</h4>
+                        <p class="text-gray-300">Upgrade and refine your equipment to unlock their true potential.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="imgs/item1.png" class="rpg-border rounded-lg w-full" alt="Item showcase 1">
+                    <img src="imgs/item2.png" class="rpg-border rounded-lg w-full" alt="Item showcase 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="world" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="medieval-font text-4xl font-bold mb-16 text-center gradient-text">Immersive World</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="rpg-border rounded-lg overflow-hidden">
+                    <video class="w-full" autoplay loop muted playsinline>
+                        <source src="imgs/immersive_world.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3 class="medieval-font text-3xl font-bold mb-6">Explore Sira</h3>
+                    <p class="text-gray-300 mb-6">Venture into a vast world filled with mysteries, challenges, and adventures. Discover hidden treasures, solve ancient puzzles, and uncover the secrets of your past.</p>
+                    <div class="feature-card rounded-lg p-6">
+                        <h4 class="medieval-font text-xl font-bold mb-2">A Living World</h4>
+                        <p class="text-gray-300">Experience a dynamic environment where your choices matter and every corner holds new discoveries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-bg py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="divider mb-8"></div>
+            <p class="text-gray-400">© 2025 Spellforged. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="devModal" class="fixed inset-0 z-50 hidden">
+      <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
+      
+      <div class="fixed inset-0 flex items-center justify-center p-4">
+          <div class="relative bg-gray-900 rounded-lg w-full max-w-lg transform transition-all">
+              <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg opacity-20 blur"></div>
+              
+              <div class="relative bg-gray-900 rounded-lg p-1">
+                  <div class="bg-gray-900 rounded-lg p-6 relative">
+                      <!-- Close button -->
+                      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition group">
+                          <div class="absolute inset-0 bg-purple-500 opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity"></div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                      </button>
+
+                      <div class="text-center">
+                          <div class="w-24 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto mb-6"></div>
+                          
+                          <h3 class="medieval-font text-3xl font-bold mb-6 gradient-text">IN DEVELOPMENT</h3>
+                          
+                          <p class="text-gray-300 mb-8 leading-relaxed">
+                              The server is currently in development. Join our Discord community to follow development updates, 
+                              contribute ideas, and connect with fellow adventurers eager to explore the world of Spellforged.
+                          </p>
+
+                          <a href="https://discord.gg/jJVEYpW" 
+                             class="group relative inline-flex justify-center items-center w-full">
+                              <div class="absolute inset-0 bg-purple-500 opacity-0 group-hover:opacity-20 rounded-lg blur-md transition-opacity"></div>
+                              <div class="relative bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg transition-all transform group-hover:scale-[1.02] w-full">
+                                  <span class="flex items-center justify-center space-x-2">
+                                      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                                      </svg>
+                                      <span class="font-semibold">Join Our Discord</span>
+                                  </span>
+                              </div>
+                          </a>
+
+                          <div class="w-24 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto mt-6"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-  </header>
+  </div>
 
-  <section class="my-5">
-    <div class="container-lg text-center">
-      <h2 class="fa-bold fs-2">About</h2>
-      <hr />
-      <p class="fs-5">
-        PROJECT Spellforged is an upcoming open-world MMORPG Server for Minecraft: Java Edition. Hailing from
-        unknown origins and no recollections of your past, explore the vast world of Sira, a land teeming with
-        magic and adventures
-        abound. Here, you will claim bountiful treasures, face off against overwhelming foes, and uncover the
-        truths
-        about this world and your origins.
-      </p>
-      <h1>
-        <p>
-          <a class="fs-3" href="faq/"><i class="fas fa-question me-3"></i>FAQ</a>
-          •
-          <a class="fs-3" href="https://discord.gg/jJVEYpW"><i class="fab fa-discord me-3"></i>Join Our
-            Discord</a>
-          •
-          <a class="fs-3" href="https://www.youtube.com/watch?v=wRbPtMJWmSg"><i class="fab fa-youtube me-3"></i>Latest
-            Video</a>
-        </p>
-      </h1>
-    </div>
-    <div class="container-fluid heroBanner classesHero w-100 p-5">
-      <div class="row mx-auto align-items-center">
-        <div class="col-sm textBox">
-          <h2 class="text-center fw-bold">In-Depth Classes</h2>
-          <p class="fs-4">
-            Your journeys will not be without growth. Choose from 5 Classes - each with 3 Specializations -
-            and over 100 Skills to use against your enemies. Each Class and Specialization has a unique
-            playstyle in combat.
-            <br />
-            <br />
-            So, whether you enjoy being on the frontlines to either decimate your foes or protect your
-            allies,
-            or instead want to provide ranged support to your allies from the back, there is a playstyle
-            that
-            you're bound to find that will keep you engaged and satisfied throughout your adventures.
-            <br />
-            <br />
-          </p>
-          <div class="col-sm">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn modalButton d-block mx-auto w-50 fs-3" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              Discover Classes
-            </button>
-          </div>
+  <script>
+      function copyIP() {
+          const modal = document.getElementById('devModal');
+          modal.classList.remove('hidden');
+      }
 
-          <!-- Modal -->
-        </div>
+      function closeModal() {
+          const modal = document.getElementById('devModal');
+          modal.classList.add('hidden');
+      }
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header text-center">
-                <h4 class="modal-title" id="exampleModalLabel">
-                  In-Depth Classes
-                </h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  <b>PROJECT Spellforged offers 5 base classes.</b> Each one caters towards
-                  baseline roles and playstyles, such as Warriors focused on being frontliners
-                  and Casters being adept magic wielders.
-                </p>
-                <p>Classes are further divided into <b>3 Specializations,</b> which are the
-                  centerpieces of all classes. Each one provides its own unique set of skills,
-                  roles, and playstyles. As you explore the world and grow in strength, you'll
-                  slowly but surely
-                  increase
-                  in power as you unlock new skills and upgrades to customize your playstyle
-                  even further.
-                </p>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Warrior - The Frontline Soldier</h5>
-                      <p>Primary Weapons: <b>Swords, Axes, Spears</b></p>
-                      <p>
-                        Warriors strive for excellence in armed combat, and
-                        fighting on the frontlines for their allies. Their
-                        natural resilience allows them to stand headfirst
-                        against their enemies, and their strength enables
-                        them to use the heaviest equipment available to
-                        them.
-                      </p>
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col"><u>Specialization</u></th>
-                            <th scope="col">Weapon</th>
-                            <th scope="col">Group Role(s)</th>
-                            <th scope="col">Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><b>Slayer</b></td>
-                            <td>Swords</td>
-                            <td>DPS, Tank</td>
-                            <td>Slayers use their great strength to unleash powerful,
-                              blazing attacks, wiping out
-                              their enemies with a destructive force.</td>
-                          </tr>
-                          <tr>
-                            <td><b>Berserker</b></td>
-                            <td>Axe</td>
-                            <td>DPS, Tank</td>
-                            <td>Berserkers are ferocious fighters, utilizing their rage
-                              to cleave down their opponents
-                              and weaken their attacks.</td>
-                          </tr>
-                          <tr>
-                            <td><b>Lancer</b></td>
-                            <td>Spears</td>
-                            <td>DPS, Tank</td>
-                            <td>Lancers slash and thrust at their opponents to inflict
-                              fatal wounds with a
-                              devastating, frigid power.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/lancer.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Ranger - The Ranged Scout</h5>
-                      <p>Primary Weapons: <b>Bows, Daggers, Axes</b></p>
-                      <p>
-                        Rangers are the recons of the group, able to move
-                        swiftly through terrain. In combat, they deliver
-                        ranged fire from the backline of their team, but if
-                        required can equip Melee weapons to perform swift
-                        attacks up close.
-                      </p>
-
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col"><u>Specialization</u></th>
-                            <th scope="col">Weapon</th>
-                            <th scope="col">Group Role(s)</th>
-                            <th scope="col">Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><b>Marksman</b></td>
-                            <td>Bows</td>
-                            <td>DPS</td>
-                            <td>Marksmen use the wind to guide their movements and their
-                              arrows, enabling them to hit
-                              their mark with deadly accuracy.</td>
-                          </tr>
-                          <tr>
-                            <td><b>Tempest</b></td>
-                            <td>Daggers</td>
-                            <td>DPS</td>
-                            <td>Tempests move like lightning, utilizing throwing daggers
-                              to deliver a barrage of sharp
-                              attacks from a distance.</td>
-                          </tr>
-                          <tr>
-                            <td><b>???</b></td>
-                            <td>Axes</td>
-                            <td>???</td>
-                            <td>To be revealed...</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/marksman.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Caster - The Spellfighter</h5>
-                      <p>
-                        Primary Weapons: <b>Catalysts, Scythes, Spears</b>
-                      </p>
-                      <p>
-                        Casters are naturally talents in magicks, using
-                        their abilities to weaken their enemies or empower
-                        their allies. Their powers allow them great control
-                        over the battlefield to change the course of it to
-                        their vision. Depending on their path, A Caster can
-                        wield the flow of mana, become acquainted with the
-                        elements, or a dabbler in the dark arts...
-                      </p>
-
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col"><u>Specialization</u></th>
-                            <th scope="col">Weapon</th>
-                            <th scope="col">Group Role(s)</th>
-                            <th scope="col">Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><b>???</b></td>
-                            <td>Catalysts</td>
-                            <td>DPS</td>
-                            <td>To be revealed...</td>
-                          </tr>
-                          <tr>
-                            <td><b>Warlock</b></td>
-                            <td>Scythes</td>
-                            <td>DPS</td>
-                            <td>Warlocks dabble in the dark arts, afflicting their
-                              enemies with curses and weaknesses
-                              to make their souls an easy target.</td>
-                          </tr>
-                          <tr>
-                            <td><b>Battlemage</b></td>
-                            <td>Spears</td>
-                            <td>DPS</td>
-                            <td>Battlemages combine the art of melee and magic: Infusing their attacks with aquatic
-                              might,
-                              conjuring liquid weapons to rain down on their opponents, and unleashing an electric power
-                              in
-                              the most pressing battles.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/warlock.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Rogue - The Silent Blade</h5>
-                      <p>
-                        Primary Weapons: <b>Daggers, Swords, Scythes</b>
-                      </p>
-                      <p>
-                        Rogues excel in close quarter combat, boasting high
-                        versatility and movement. Their preferred weapons
-                        give them the ability to perform swift attacks
-                        constantly. In combat, Rogues have the option to
-                        stealth in to assassinate their targets, or go all
-                        out and slash with speed and precision at their
-                        enemies.
-                      </p>
-
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col"><u>Specialization</u></th>
-                            <th scope="col">Weapon</th>
-                            <th scope="col">Group Role(s)</th>
-                            <th scope="col">Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><b>???</b></td>
-                            <td>Daggers</td>
-                            <td>???</td>
-                            <td>To be revealed...</td>
-                          </tr>
-                          <tr>
-                            <td><b>Twilight</b></td>
-                            <td>Swords</td>
-                            <td>DPS</td>
-                            <td>Twilights move with haste and strike with lightning,
-                              unleashing torrents of slashes to
-                              quickly dice up their enemies.</td>
-                          </tr>
-                          <tr>
-                            <td><b>Reaper</b></td>
-                            <td>Scythes</td>
-                            <td>DPS</td>
-                            <td>Reapers revel in the shadows and in death, using both to
-                              siphon and ravage their
-                              victims.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/twilight.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Mystics - The Supportive Hand</h5>
-                      <p>Primary Weapons: <b>Catalysts, Bows, Swords</b></p>
-                      <p>
-                        Mystics are the primary support of the group,
-                        revitalizing or empowering their allies using various holy magicks.
-                        In some cases, they can
-                        fight on the
-                        frontlines, using their divine magic to strike down
-                        their foes, or their innate protections to aid them
-                        in defending against dangerous enemies.
-                      </p>
-
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col"><u>Specialization</u></th>
-                            <th scope="col">Weapon</th>
-                            <th scope="col">Group Role(s)</th>
-                            <th scope="col">Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><b>Spiritualist</b></td>
-                            <td>Catalysts</td>
-                            <td>DPS, Support</td>
-                            <td>Spiritualists call upon pure waters and spirits to aid
-                              them, either to rejuvenate
-                              their allies or drown their enemies.</td>
-                          </tr>
-                          <tr>
-                            <td><b>Paladin</b></td>
-                            <td>Swords</td>
-                            <td>DPS, Tank</td>
-                            <td>Paladins use their light magics to empower their strikes
-                              and protect their allies in
-                              order to deliver justice unto their foes.</td>
-                          </tr>
-                          <tr>
-                            <td><b>Lightweaver</b></td>
-                            <td>Bows</td>
-                            <td>DPS, Support</td>
-                            <td>Lightweavers use divine energies to rain down fiery,
-                              radiant showers of arrows, either
-                              to protect their allies or rend their enemies.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm align-items-center">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/paladin.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                <video autoplay="autoplay" muted="muted" loop="loop">
-                  <source src="imgs/slayer.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid heroBanner combatHero w-100 p-5">
-      <div class="row mx-auto align-items-center">
-        <div class="col-sm">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                <video autoplay="autoplay" muted="muted" loop="loop">
-                  <source src="imgs/combat.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm textBox">
-          <h2 class="text-center fw-bold">Dynamic Combat</h2>
-          <p class="fs-4">
-            PROJECT Spellforged boasts over 100 skills. Each one has been carefully
-            handmade to not only appear visually striking, but to be powerful and fun
-            to use, as well as being upgradable as you grow your character.
-            <br />
-            <br />
-            These skills are accompanied by a unique casting system, and
-            intricate combat features such as dashing, shielding, and parrying.
-            All players will be able to find their preferred playstyle
-            with the options presented.
-            <br />
-            <br />
-            However, your enemies can wield just as devestating attacks, from
-            simple dash strikes to powerful explosions. These, you cannot take
-            alone. Team up with other players to defeat these foes, and be
-            blessed with lost treasures earned through your party's teamwork.
-          </p>
-
-          <!-- Button trigger modal -->
-          <button type="button" class="btn modalButton d-block mx-auto w-50 fs-3" data-bs-toggle="modal"
-            data-bs-target="#combatModal">
-            Learn More
-          </button>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="combatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">
-                  Dynamic Combat
-                </h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  <b>Combat is a primary focus in PROJECT Spellforged.</b> Our goal is to make it
-                  diverse and complex,
-                  yet flow very well and satisfy as many
-                  players as possible.
-                </p>
-
-                <p>
-                  As such, we've designed a few core elements for our combat that significantly
-                  elevates it. Below are
-                  some of the most important ones to know for how you want to
-                  play.
-                </p>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>8-skill Casting - Excellent Flow & Efficiency</h5>
-                      <p>Casting Skills: <b>[Swap Key] + [Key Bind]</b></p>
-                      <p>
-                        With a heavy focus on combat in
-                        PROJECT Spellforged, casting skills needs to
-                        be fluid, and needs a good amount of slots for
-                        you to assign them to.
-                      </p>
-                      <p>
-                        PROJECT Spellforged allows you to bind usable
-                        skills in <b>8 skill slots,</b> and cast them in
-                        rapid succession using a well-paced casting system.
-                        This system allows you to use your Swap Key (Usually
-                        keybound to F) to prime an skill cast, then press a
-                        respective keybind to activate the skill.
-                      </p>
-                      <p>
-                        With this system casting all of your skills is 2 key inputs
-                        away. The available inputs you have are as followed:
-                      </p>
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">Skill Slot #</th>
-                            <th scope="col">Key Combination</th>
-                            <th scope="col">Skill Slot #</th>
-                            <th scope="col">Key Combination</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Swap Key + Left Click</td>
-                            <th scope="row">5</th>
-                            <td>Sneak + Left Click</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Swap Key + Right Click</td>
-                            <th scope="row">6</th>
-                            <td>Sneak + Right Click</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Swap Key + Drop Key</td>
-                            <th scope="row">7</th>
-                            <td>Sneak + Drop Key</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Swap Key + Swap Key</td>
-                            <th scope="row">8</th>
-                            <td>Sneak + Sneak</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/tempest.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="container text-center">
-                        <div class="row">
-                          <div class="col-sm">
-                            <img src="imgs/skill.jpg" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Awakened Techniques - Your Ultimate Move</h5>
-                      <p>Using an Awakened Technique: <b>Drop + Right Click</b></p>
-                      <p>
-                        At base, Specializations are meant to be simplistic yet fun. However,
-                        their core gameplay, playstyle, and enjoyment revolves around their more
-                        complex
-                        mechanic called an <b>Awakened Technique.</b>
-                      </p>
-                      <p>
-                        Awakened Techniques grant you a powerful attack or combo to unleash
-                        against your
-                        enemies that feels extremely fun and satisfying to wield. Each technique
-                        has been
-                        designed uniquely for each specialization, alongside their own planned
-                        upgrades to
-                        enhance its power further and to synchronize between your base skills.
-                      </p>
-                      <p>
-                        So, build up a barrage of windchaser shots and climax with a powerful
-                        beam as a Marksman, or
-                        call
-                        down a
-                        legendary blade of light to wield as your own as a Paladin for a short
-                        time. Whatever you
-                        choose,
-                        its strength will not go unnoticed.
-                      </p>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/twilight_form.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="container text-center">
-                        <div class="row">
-                          <div class="col-sm">
-                            <img src="imgs/awakened_technique.png" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>
-                        Secondary Combat Actions
-                      </h5>
-                      <p>
-                        Combat Actions:
-                        <b>Parrying, Shielding, Dashing, Healing</b>
-                      </p>
-                      <p>
-                        In addition to the numerous skills at your disposal,
-                        you will also have access to secondary combat actions
-                        depending on your specialization and role.
-                      </p>
-
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">Combat Action</th>
-                            <th scope="col">Role</th>
-                            <th scope="col">Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Parrying</td>
-                            <td>DPS</td>
-                            <td>Parrying allows you to block an incoming attack to
-                              significantly
-                              reduce its damage, and then following up immediately with a
-                              counterattack.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Shielding</td>
-                            <td>Tanks</td>
-                            <td>Shielding allows you to continuously block hits in exchange
-                              for being unable to perform
-                              most other actions. However, as a tank, it is extremely
-                              helpful to allow you to stand your
-                              ground.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Healing</td>
-                            <td>Supports</td>
-                            <td>Healing is a short cooldown action available to all support
-                              roles, allowing you to heal
-                              a single
-                              ally or a group of allies around you. This is in addition to
-                              other, more powerful support
-                              and healing skills.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Dashing</td>
-                            <td>All</td>
-                            <td>Dashing grants you a short burst of speed in order to
-                              quickly dodge an incoming attack,
-                              which can
-                              be the main determinant in a life or death situation.
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/sprint_dashing.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/shields.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid heroBanner itemsHero w-100 p-5">
-      <div class="row mx-auto align-items-center">
-        <div class="col-sm textBox">
-          <h2 class="text-center fw-bold">Expansive Item System</h2>
-          <p class="fs-4">
-            While exploring the world and doing Quests, you will come across
-            equipment that will enhance your power, or items that will enhance
-            your equipment.
-            <br />
-            <br />
-            Use these to your advantage. Acquire and refine your items
-            to boost your power and give yourself unique strengths found only in
-            this world. If you choose to do so, you will continuously go
-            from strength to strength.
-            <br />
-            <br />
-            But be warned, the greatest treasures lie in the darkest depths...
-          </p>
-
-          <!-- Button trigger modal -->
-          <button type="button" class="btn modalButton d-block mx-auto w-50 fs-3" data-bs-toggle="modal"
-            data-bs-target="#itemsModal">
-            View More
-          </button>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="itemsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">
-                  Expansive Item System
-                </h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  <b>Items and their strengths are important in PROJECT
-                    Spellforged.</b>
-                  Many items you will find in the world have a use or
-                  purpose besides being sold to a vendor for money. The system as a whole is also
-                  designed to be
-                  simplistic and easy to pick up,
-                  but also to have a fair expanse over what you can use and combine across
-                  different types of
-                  equipment you may find.
-                </p>
-                <p>
-                  In addition to the standard weapons and armor that you will find on your
-                  travels, there are some
-                  other key items and features
-                  that you should keep an eye out for.
-                </p>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Offhands - Role-defining Items</h5>
-                      <p>Available Offhands: <b>Parry Weapons, Shields, Sigils</b></p>
-                      <p>
-                        Depending on what role you take on in a party, whether a DPS or a
-                        Tank,
-                        you'll be able to equip an offhand to suit your role.
-                      </p>
-                      <p>
-                        Offhands will grant you secondary combat actions depending on which
-                        one you're using.
-                        These actions are incredibly handy to performing your role. However,
-                        an offhand for one role
-                        cannot be used on other roles.
-                      </p>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm text-center">
-                            <img src="imgs/parry_dagger.png" />
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm text-center">
-                            <img src="imgs/shield.png" />
-                          </div>
-                        </div>
-                      </div>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Accessories - Role-dependent Benefits</h5>
-                      <p>
-                        Accessory Types:
-                        <b>Rings, Bracelets, Necklaces, Earrings</b>
-                      </p>
-                      <p>
-                        While Weapons grant you damage output and Armor
-                        improves your defenses and attributes, Accessories
-                        are a third equipment type that will allow you to
-                        enhance your character in a different style.
-                      </p>
-                      <p>
-                        <b>Accessories give you unique attributes not
-                          found on other equipment types,</b>
-                        such as Resilience, Tenacity, and Devotion. These stats can affect
-                        your
-                        playstyle depending on what you wear. Furthermore,
-                        upgrading your Accessories via Refinements will
-                        increase these stats to grant you more power.
-                      </p>
-                      <p>
-                        When exploring the world, be sure to look out for
-                        these kinds of items. Accessories can be helpful to
-                        your playstyle depending on what you prefer.
-                      </p>
-                    </div>
-
-                    <div class="col-sm text-center">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <img src="imgs/accessory_1.png" />
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <img src="imgs/accessory_2.png" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Refinements - Further Empowerment</h5>
-                      <p>
-                        Enhancement Styles:
-                        <b>Reforges, Refinements, Imbuements,
-                          Enchantments</b>
-                      </p>
-                      <p>
-                        Enemies are considerably strong and dangerous in this world. If you
-                        feel like
-                        your equipment is lackluster and are unable to acquire more,
-                        <b>refinements</b> are
-                        a quick, yet reliable way to improve its strength.
-                      </p>
-                      <p>
-                        <b>Refinements</b> upgrade your equipment's base
-                        stats directly. They can improve a weapon's
-                        damage, an armor piece's defensive stats, or an
-                        accessory's main stat. Equipment can be refined
-                        multiple times at the cost of either Refinement
-                        Materials, or using other Equipment.
-                      </p>
-                    </div>
-
-                    <div class="col-sm text-center">
-                      <div class="container">
-                        <div class="row">
-                          <img src="imgs/refined_weapon.png" />
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="container">
-                        <div class="row">
-                          <img src="imgs/refinement_material.png" />
-                        </div>
-                      </div>
-                      <br />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm text-center">
-                <img src="imgs/item1.png" />
-                <img src="imgs/item2.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid heroBanner worldHero w-100 p-5">
-      <div class="row mx-auto align-items-center">
-        <div class="col-sm">
-          <div class="container">
-            <div class="row">
-              <video autoplay="autoplay" muted="muted" loop="loop">
-                <source src="imgs/immersive_world.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm textBox d-flex flex-column justify-content-between">
-          <h2 class="text-center fw-bold">Immersive World</h2>
-          <p class="fs-4">
-            Explore the lands of Sira, a world of magic and adventure. Here, you will unearth lost
-            treasures,take part in various open-world activities and puzzles, and conquer strong foes with
-            other
-            players of a similar mindset.
-            <br />
-            <br />
-            This is all accompanied with other aspects to help make your adventures
-            more enjoyable. In this open world, the experience you have is what you make of it.
-          </p>
-
-          <!-- Button trigger modal -->
-          <div class="d-flex flex-column justify-content-end h-100">
-            <button type="button" class="btn modalButton d-block mx-auto w-50 fs-3" data-bs-toggle="modal"
-              data-bs-target="#worldModal">
-              Explore Sira
-            </button>
-          </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="worldModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">
-                  Immersive World
-                </h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  <b>The world of Sira has been carely developed and built with a purpose.</b>
-                  It's built to be immersive and breathtaking, while also designed to have loads
-                  of content, stories,
-                  and mysteries revolving around it.
-                  Around every corner, there is be something new to do or discover.
-                </p>
-                <p>
-                  There are many features about it, but there's also some key ones that we want to
-                  bring special
-                  attention towards.
-                </p>
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>A Handcrafted World - Historical yet Undiscovered</h5>
-                      <p>Design Philosophy: <b>Open-world</b></p>
-                      <p>
-                        The world that you will be exploring is not only vast and beautiful,
-                        but also filled with
-                        history and secrets to uncover. You will be stepping into it with no
-                        recollection of who you
-                        are or where you came from, so
-                        why not try and not only learn about this world, but also who you
-                        truly are?
-                      </p>
-                      <p>
-                        Experience the main tale of this world and your involvement through
-                        story-driven mainline
-                        quests and meeting unique characters along the way. Learn more about
-                        its intracies through
-                        side quests, lore entries known as Collectibles, or just by
-                        observing and talking to the
-                        inhabitants of towns and villages.
-                      </p>
-                    </div>
-
-                    <div class="col-sm">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm text-center">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/handcrafted_world.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Open-World Activities - Treasures Abound</h5>
-                      <p>
-                        Activity Types: <b>Combat, Puzzles, Minigames</b>
-                      </p>
-                      <p>
-                        Should you need encouragement to explore, there are various
-                        open-world activities that
-                        you can take part in for a fun experience and lucrative rewards.
-                        Clear out enemy camps and take their treasures for yourself, solve
-                        puzzles ranging from simple
-                        to complex so you can reap the rewards from the solution, or just
-                        take part in fun minigames
-                        that will give you loot just as easily.
-                      </p>
-                      <p>
-                        These activities can either be done alone or with a group of
-                        friends, and all of you will be
-                        rewarded just the same! Venture the world
-                        and see what kinds of activities you can find to complete together.
-                      </p>
-                    </div>
-
-                    <div class="col-sm text-center">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <video autoplay="autoplay" muted="muted" loop="loop">
-                              <source src="imgs/dig_site.mp4" type="video/mp4" />
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5>Original Soundtracks - Expertly Composed</h5>
-                      <p>
-                        Composers:
-                        <b>corpe_, CmdrGod, Novalescent</b>
-                      </p>
-                      <p>
-                        To help immerse you in the world and its surroundings, we will also
-                        be having
-                        an original soundtrack to accompany you.
-                      </p>
-                      <p>
-                        As you venture, you can listen and relax to ambient tunes that
-                        inspire wonder and joy. As you
-                        fight, you will be aided by high-paced, dramatic tracks to keep you
-                        encouraged. No matter
-                        where your
-                        journeys take you, know that you will always have the right music to
-                        accompany your moments.
-                      </p>
-                    </div>
-
-                    <div class="col-sm text-center">
-                      <div class="container">
-                        <div class="row">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/X0hGa8ebDBQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="container">
-                        <div class="row">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/r9invWWhixc"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="container-lg text-center">
-      <br />
-      <p class="fs-4">
-        <u><b>NOTICE</b></u>
-      </p>
-      <p class="fs-5">
-        All gameplay and environments are not final, and as such are subject to change.
-      </p>
-      <hr />
-      <p class="fs-2">
-        Website by Novalescent
-      </p>
-    </div>
-  </section>
-</body>
-
-</html>
-<script type="module" src="src/index.ts"></script>
+      // Close modal when clicking outside
+      document.getElementById('devModal').addEventListener('click', function(e) {
+          if (e.target === this) {
+              closeModal();
+          }
+      });
+  </script>
