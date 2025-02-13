@@ -12,8 +12,15 @@
             font-family: 'MedievalSharp', cursive;
         }
 
+        @font-face {
+            font-family: 'Moderniz';
+            src: url('../../fonts/Moderniz/Moderniz.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
         .modern-title {
-            font-family: 'Cabinet Grotesk', sans-serif;
+            font-family: 'Moderniz', sans-serif;
         }
 
         .hero {
