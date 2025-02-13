@@ -1,166 +1,199 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+﻿@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 
-        :root {
-            --glow-color: #06b6d4;
-        }
+:root {
+  --glow-color: #06b6d4;
+}
 
-        body {
-            background-color: #0a0a0f;
-        }
+body {
+  background-color: #0a0a0f;
+}
 
-        .medieval-font {
-            font-family: 'MedievalSharp', cursive;
-        }
+.medieval-font {
+  font-family: "MedievalSharp", cursive;
+}
 
-        @font-face {
-            font-family: 'Moderniz';
-            src: url('../../fonts/Moderniz/Moderniz.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        .modern-title {
-            font-family: 'Moderniz', sans-serif;
-        }
+@font-face {
+  font-family: "Moderniz";
+  src: url("/fonts/Moderniz/Moderniz.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-        .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../imgs/header.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        
-        .title-shadow {
-            animation: float 6s ease-in-out infinite;
-            text-shadow: 0 0 10px rgba(6, 182, 212, 0.5),
-                        0 0 20px rgba(6, 182, 212, 0.3),
-                        0 0 30px rgba(6, 182, 212, 0.2); /* Changed from purple to cyan */
-        }
+.modern-title {
+  font-family: "Moderniz", sans-serif;
+}
 
-        .animate-pulse-slow {
-            animation: pulse 3s ease-in-out infinite;
-        }
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #06b6d4, transparent);
+  margin: -3rem 0 2rem 0;
+}
 
-        @keyframes float {
-            0%, 100% { 
-                transform: translateY(0);
-                text-shadow: 0 0 10px rgba(6, 182, 212, 0.5),
-                            0 0 20px rgba(6, 182, 212, 0.3),
-                            0 0 30px rgba(6, 182, 212, 0.2); /* Changed from purple to cyan */
-            }
-            50% { 
-                transform: translateY(-20px);
-                text-shadow: 0 0 15px rgba(6, 182, 212, 0.6),
-                            0 0 25px rgba(6, 182, 212, 0.4),
-                            0 0 35px rgba(6, 182, 212, 0.3); /* Changed from purple to cyan */
-            }
-        }
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/imgs/header.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.7;
-            }
-        }
+.title-shadow {
+  animation: float 6s ease-in-out infinite;
+  text-shadow:
+    0 0 10px rgba(6, 182, 212, 0.5),
+    0 0 20px rgba(6, 182, 212, 0.3),
+    0 0 30px rgba(6, 182, 212, 0.2); /* Changed from purple to cyan */
+}
 
-        /* For any hover links */
-        .hover\:text-purple-400:hover {
-            color: #22d3ee; /* Changed from purple-400 to cyan-400 */
-        }
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
 
-        /* For the Discord button */
-        .bg-indigo-600 {
-            background-color: #0891b2; /* Changed from indigo to cyan-600 */
-        }
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+    text-shadow:
+      0 0 10px rgba(6, 182, 212, 0.5),
+      0 0 20px rgba(6, 182, 212, 0.3),
+      0 0 30px rgba(6, 182, 212, 0.2); /* Changed from purple to cyan */
+  }
+  50% {
+    transform: translateY(-20px);
+    text-shadow:
+      0 0 15px rgba(6, 182, 212, 0.6),
+      0 0 25px rgba(6, 182, 212, 0.4),
+      0 0 35px rgba(6, 182, 212, 0.3); /* Changed from purple to cyan */
+  }
+}
 
-        .hover\:bg-indigo-700:hover {
-            background-color: #0e7490; /* Changed from indigo to cyan-700 */
-        }
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
 
-        .gradient-text {
-            background: linear-gradient(45deg, #06b6d4, #0ea5e9); /* Changed from purple/blue to cyan/light-blue */
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .feature-card {
-            background: rgba(17, 24, 39, 0.8);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(6, 182, 212, 0.2); /* Changed from purple to cyan */
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--glow-color);
-            box-shadow: 0 0 15px rgba(6, 182, 212, 0.3); /* Changed from purple to cyan */
-        }
+/* For any hover links */
+.hover\:text-purple-400:hover {
+  color: #22d3ee; /* Changed from purple-400 to cyan-400 */
+}
 
-        .glow-effect {
-            position: relative;
-        }
+/* For the Discord button */
+.bg-indigo-600 {
+  background-color: #0891b2; /* Changed from indigo to cyan-600 */
+}
 
-        .glow-effect::after {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, #06b6d4, #0ea5e9); /* Changed from purple/blue to cyan/light-blue */
-            z-index: -1;
-            filter: blur(15px);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
+.hover\:bg-indigo-700:hover {
+  background-color: #0e7490; /* Changed from indigo to cyan-700 */
+}
 
-        .glow-effect:hover::after {
-            opacity: 0.5;
-        }
+.gradient-text {
+  background: linear-gradient(
+    45deg,
+    #06b6d4,
+    #0ea5e9
+  ); /* Changed from purple/blue to cyan/light-blue */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
+.feature-card {
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(6, 182, 212, 0.2); /* Changed from purple to cyan */
+}
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--glow-color);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3); /* Changed from purple to cyan */
+}
 
-        .ip-box {
-            background: rgba(17, 24, 39, 0.9);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(6, 182, 212, 0.3); /* Changed from purple to cyan */
-        }
-        
-        .ip-box:hover {
-            background: rgba(17, 24, 39, 1);
-            transform: scale(1.05);
-            border-color: var(--glow-color);
-            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4); /* Changed from purple to cyan */
-        }
-        
-        .divider {
-            position: relative;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #06b6d4, transparent); /* Changed from purple to cyan */
-        }
-        
-        .rpg-border {
-            border: 2px solid transparent;
-            background-image: linear-gradient(#0a0a0f, #0a0a0f), 
-                            linear-gradient(45deg, #06b6d4, #0ea5e9); /* Changed from purple/blue to cyan/light-blue */
-            background-origin: border-box;
-            background-clip: content-box, border-box;
-        }
+.glow-effect {
+  position: relative;
+}
 
-        .section-bg {
-            background: linear-gradient(rgba(10, 10, 15, 0.97), rgba(10, 10, 15, 0.97)),
-                        url('../../imgs/header.png');
-            background-attachment: fixed;
-            background-size: cover;
-        }
+.glow-effect::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    #06b6d4,
+    #0ea5e9
+  ); /* Changed from purple/blue to cyan/light-blue */
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-effect:hover::after {
+  opacity: 0.5;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.ip-box {
+  background: rgba(17, 24, 39, 0.9);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(6, 182, 212, 0.3); /* Changed from purple to cyan */
+}
+
+.ip-box:hover {
+  background: rgba(17, 24, 39, 1);
+  transform: scale(1.05);
+  border-color: var(--glow-color);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.4); /* Changed from purple to cyan */
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #06b6d4,
+    transparent
+  ); /* Changed from purple to cyan */
+}
+
+.rpg-border {
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#0a0a0f, #0a0a0f), linear-gradient(45deg, #06b6d4, #0ea5e9); /* Changed from purple/blue to cyan/light-blue */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.section-bg {
+  background:
+    linear-gradient(rgba(10, 10, 15, 0.97), rgba(10, 10, 15, 0.97)),
+    url("/imgs/header.png");
+  background-attachment: fixed;
+  background-size: cover;
+}

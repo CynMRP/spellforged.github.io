@@ -1,163 +1,298 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apply - PROJECT Spellforged</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="../src/styles/site.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="../src/styles/site.css" rel="stylesheet" />
     <style>
-        .status-open {
-            background: linear-gradient(45deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.2));
-            border: 1px solid #10B981;
-            color: #10B981;
-            text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
-        }
+      .status-open {
+        background: linear-gradient(
+          45deg,
+          rgba(16, 185, 129, 0.1),
+          rgba(16, 185, 129, 0.2)
+        );
+        border: 1px solid #10b981;
+        color: #10b981;
+        text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+      }
 
-        .status-closed {
-            background: linear-gradient(45deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.2));
-            border: 1px solid #EF4444;
-            color: #EF4444;
-            text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
-        }
+      .status-closed {
+        background: linear-gradient(
+          45deg,
+          rgba(239, 68, 68, 0.1),
+          rgba(239, 68, 68, 0.2)
+        );
+        border: 1px solid #ef4444;
+        color: #ef4444;
+        text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+      }
 
-        .application-card {
-            transition: all 0.3s ease;
-            border: 1px solid rgba(168, 85, 247, 0.2);
-        }
+      .application-card {
+        transition: all 0.3s ease;
+        border: 1px solid rgba(168, 85, 247, 0.2);
+      }
 
-        .application-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--glow-color);
-            box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
-        }
+      .application-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--glow-color);
+        box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+      }
     </style>
-</head>
-<body class="text-white">
-    <nav class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg rpg-border">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="text-xl font-bold gradient-text medieval-font">PROJECT Spellforged</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="../#features" class="hover:text-blue-400 transition">Features</a>
-                    <a href="../#classes" class="hover:text-blue-400 transition">Classes</a>
-                    <a href="../#combat" class="hover:text-blue-400 transition">Combat</a>
-                    <a href="../#items" class="hover:text-blue-400 transition">Items</a>
-                    <a href="/faq/" class="hover:text-blue-400 transition">FAQ</a>
-                    <a href="/apply/" class="hover:text-blue-400 transition">Apply</a>
-                    <a href="https://discord.gg/jJVEYpW" class="glow-effect bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg transition">Join Discord</a>
-                </div>
-            </div>
+  </head>
+  <body class="text-white">
+    <nav
+      class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg rpg-border"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-xl font-bold gradient-text medieval-font">
+            PROJECT Spellforged
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="../#features" class="hover:text-blue-400 transition"
+              >Features</a
+            >
+            <a href="../#classes" class="hover:text-blue-400 transition"
+              >Classes</a
+            >
+            <a href="../#combat" class="hover:text-blue-400 transition"
+              >Combat</a
+            >
+            <a href="../#items" class="hover:text-blue-400 transition">Items</a>
+            <a href="/faq/" class="hover:text-blue-400 transition">FAQ</a>
+            <a href="/apply/" class="hover:text-blue-400 transition">Apply</a>
+            <a
+              href="https://discord.gg/jJVEYpW"
+              class="glow-effect bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg transition"
+              >Join Discord</a
+            >
+          </div>
         </div>
+      </div>
     </nav>
 
-    <section class="hero min-h-[400px] flex items-center justify-center text-center">
-        <div class="container mx-auto px-6">
-            <h1 class="medieval-font text-5xl md:text-6xl font-bold mb-8 gradient-text">Join Our Team</h1>
-            <p class="text-xl md:text-2xl mb-12 text-gray-300">Help us build the world of PROJECT Spellforged</p>
-        </div>
+    <section
+      class="hero min-h-[400px] flex items-center justify-center text-center"
+    >
+      <div class="container mx-auto px-6">
+        <h1
+          class="medieval-font text-5xl md:text-6xl font-bold mb-8 gradient-text"
+        >
+          Join Our Team
+        </h1>
+        <p class="text-xl md:text-2xl mb-12 text-gray-300">
+          Help us build the world of PROJECT Spellforged
+        </p>
+      </div>
     </section>
 
     <section class="py-20 section-bg">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="feature-card rounded-lg p-8 mb-12">
-                <p class="text-gray-300 text-lg mb-6">
-                    PROJECT Spellforged is, without a doubt, a grand ambition. Many of us share a positive vision for this project and want to see it succeed.
-                    We are looking for passionate individuals who wish to share in this vision and help bring it to life.
-                </p>
-                <p class="text-gray-300 text-lg">
-                    Join our organized and passionate team working together to bring this project towards excellence. We value friendly ties and having
-                    fun, so expect to meet new people and make new acquaintances along the way.
-                </p>
-            </div>
-
-            <div class="feature-card rounded-lg p-8 mb-12">
-                <h2 class="medieval-font text-2xl font-bold mb-6 gradient-text">Basic Requirements</h2>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <span class="text-blue-400 mr-3 mt-1">→</span>
-                        <div>
-                            <span class="font-bold text-gray-200">Minecraft: Java Edition Account</span>
-                            <p class="text-gray-300 mt-1">Our server is hosted on Minecraft: Java Edition, so you will need an account to work on the project.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-400 mr-3 mt-1">→</span>
-                        <div>
-                            <span class="font-bold text-gray-200">Discord Account</span>
-                            <p class="text-gray-300 mt-1">Our team communicates primarily through Discord. Create an account at <a href="https://discord.com/" class="text-blue-400 hover:text-blue-300">Discord</a>.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-400 mr-3 mt-1">→</span>
-                        <div>
-                            <span class="font-bold text-gray-200">Strong English Skills</span>
-                            <p class="text-gray-300 mt-1">PROJECT Spellforged and its team communicate primarily through English.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="feature-card rounded-lg p-8">
-                <h2 class="medieval-font text-2xl font-bold mb-6 gradient-text">Available Positions</h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="medieval-font text-xl font-bold text-gray-200">Builder</h3>
-                            <span class="px-3 py-1 rounded-full text-sm font-semibold status-open">OPEN</span>
-                        </div>
-                        <p class="text-gray-300 mb-4">Create and shape the world of PROJECT Spellforged through architectural and environmental design.</p>
-                        <a href="https://docs.google.com/document/d/13HrR3Ftgkj0KFwoHRse9Qc4b9t6uoBC2mqWz5NPx-RM/edit" 
-                           class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Apply Now</a>
-                    </div>
-
-                    <div class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="medieval-font text-xl font-bold text-gray-200">Pixel Artist</h3>
-                            <span class="px-3 py-1 rounded-full text-sm font-semibold status-closed">CLOSED</span>
-                        </div>
-                        <p class="text-gray-300 mb-4">Design and create pixel art assets for items, UI elements, and more.</p>
-                        <button disabled class="inline-block bg-gray-600 cursor-not-allowed text-gray-400 px-4 py-2 rounded-lg">Currently Closed</button>
-                    </div>
-
-                    <div class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="medieval-font text-xl font-bold text-gray-200">3D Modeler</h3>
-                            <span class="px-3 py-1 rounded-full text-sm font-semibold status-open">OPEN</span>
-                        </div>
-                        <p class="text-gray-300 mb-4">Create 3D models and animations for characters, creatures, and objects.</p>
-                        <a href="https://docs.google.com/document/d/1XpV-dKwcEJ_tC9vy9_kEC90LqPmihz4RgSNjyz2WpAo/edit" 
-                           class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Apply Now</a>
-                    </div>
-
-                    <div class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="medieval-font text-xl font-bold text-gray-200">Writer</h3>
-                            <span class="px-3 py-1 rounded-full text-sm font-semibold status-closed">CLOSED</span>
-                        </div>
-                        <p class="text-gray-300 mb-4">Craft compelling stories, quests, and lore for the world of PROJECT Spellforged.</p>
-                        <button disabled class="inline-block bg-gray-600 cursor-not-allowed text-gray-400 px-4 py-2 rounded-lg">Currently Closed</button>
-                    </div>
-
-                    <div class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="medieval-font text-xl font-bold text-gray-200">Game Master</h3>
-                            <span class="px-3 py-1 rounded-full text-sm font-semibold status-closed">CLOSED</span>
-                        </div>
-                        <p class="text-gray-300 mb-4">Manage and moderate the game world, ensuring a fair and enjoyable experience for all players.</p>
-                        <button disabled class="inline-block bg-gray-600 cursor-not-allowed text-gray-400 px-4 py-2 rounded-lg">Currently Closed</button>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="feature-card rounded-lg p-8 mb-12">
+          <p class="text-gray-300 text-lg mb-6">
+            PROJECT Spellforged is, without a doubt, a grand ambition. Many of
+            us share a positive vision for this project and want to see it
+            succeed. We are looking for passionate individuals who wish to share
+            in this vision and help bring it to life.
+          </p>
+          <p class="text-gray-300 text-lg">
+            Join our organized and passionate team working together to bring
+            this project towards excellence. We value friendly ties and having
+            fun, so expect to meet new people and make new acquaintances along
+            the way.
+          </p>
         </div>
+
+        <div class="feature-card rounded-lg p-8 mb-12">
+          <h2 class="medieval-font text-2xl font-bold mb-6 gradient-text">
+            Basic Requirements
+          </h2>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-blue-400 mr-3 mt-1">→</span>
+              <div>
+                <span class="font-bold text-gray-200"
+                  >Minecraft: Java Edition Account</span
+                >
+                <p class="text-gray-300 mt-1">
+                  Our server is hosted on Minecraft: Java Edition, so you will
+                  need an account to work on the project.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-400 mr-3 mt-1">→</span>
+              <div>
+                <span class="font-bold text-gray-200">Discord Account</span>
+                <p class="text-gray-300 mt-1">
+                  Our team communicates primarily through Discord. Create an
+                  account at
+                  <a
+                    href="https://discord.com/"
+                    class="text-blue-400 hover:text-blue-300"
+                    >Discord</a
+                  >.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-400 mr-3 mt-1">→</span>
+              <div>
+                <span class="font-bold text-gray-200"
+                  >Strong English Skills</span
+                >
+                <p class="text-gray-300 mt-1">
+                  PROJECT Spellforged and its team communicate primarily through
+                  English.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="feature-card rounded-lg p-8">
+          <h2 class="medieval-font text-2xl font-bold mb-6 gradient-text">
+            Available Positions
+          </h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div
+              class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="medieval-font text-xl font-bold text-gray-200">
+                  Builder
+                </h3>
+                <span
+                  class="px-3 py-1 rounded-full text-sm font-semibold status-open"
+                  >OPEN</span
+                >
+              </div>
+              <p class="text-gray-300 mb-4">
+                Create and shape the world of PROJECT Spellforged through
+                architectural and environmental design.
+              </p>
+              <a
+                href="https://docs.google.com/document/d/13HrR3Ftgkj0KFwoHRse9Qc4b9t6uoBC2mqWz5NPx-RM/edit"
+                class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
+                >Apply Now</a
+              >
+            </div>
+
+            <div
+              class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="medieval-font text-xl font-bold text-gray-200">
+                  Pixel Artist
+                </h3>
+                <span
+                  class="px-3 py-1 rounded-full text-sm font-semibold status-closed"
+                  >CLOSED</span
+                >
+              </div>
+              <p class="text-gray-300 mb-4">
+                Design and create pixel art assets for items, UI elements, and
+                more.
+              </p>
+              <button
+                disabled
+                class="inline-block bg-gray-600 cursor-not-allowed text-gray-400 px-4 py-2 rounded-lg"
+              >
+                Currently Closed
+              </button>
+            </div>
+
+            <div
+              class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="medieval-font text-xl font-bold text-gray-200">
+                  3D Modeler
+                </h3>
+                <span
+                  class="px-3 py-1 rounded-full text-sm font-semibold status-open"
+                  >OPEN</span
+                >
+              </div>
+              <p class="text-gray-300 mb-4">
+                Create 3D models and animations for characters, creatures, and
+                objects.
+              </p>
+              <a
+                href="https://docs.google.com/document/d/1XpV-dKwcEJ_tC9vy9_kEC90LqPmihz4RgSNjyz2WpAo/edit"
+                class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
+                >Apply Now</a
+              >
+            </div>
+
+            <div
+              class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="medieval-font text-xl font-bold text-gray-200">
+                  Writer
+                </h3>
+                <span
+                  class="px-3 py-1 rounded-full text-sm font-semibold status-closed"
+                  >CLOSED</span
+                >
+              </div>
+              <p class="text-gray-300 mb-4">
+                Craft compelling stories, quests, and lore for the world of
+                PROJECT Spellforged.
+              </p>
+              <button
+                disabled
+                class="inline-block bg-gray-600 cursor-not-allowed text-gray-400 px-4 py-2 rounded-lg"
+              >
+                Currently Closed
+              </button>
+            </div>
+
+            <div
+              class="application-card bg-gray-800 bg-opacity-50 rounded-lg p-6"
+            >
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="medieval-font text-xl font-bold text-gray-200">
+                  Game Master
+                </h3>
+                <span
+                  class="px-3 py-1 rounded-full text-sm font-semibold status-closed"
+                  >CLOSED</span
+                >
+              </div>
+              <p class="text-gray-300 mb-4">
+                Manage and moderate the game world, ensuring a fair and
+                enjoyable experience for all players.
+              </p>
+              <button
+                disabled
+                class="inline-block bg-gray-600 cursor-not-allowed text-gray-400 px-4 py-2 rounded-lg"
+              >
+                Currently Closed
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="section-bg py-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="divider mb-8"></div>
-            <p class="text-gray-400 mb-4">Our team members' individual opinions do not reflect the entire team or PROJECT Spellforged as a whole.</p>
-            <p class="text-gray-400">© 2025 PROJECT Spellforged. All rights reserved.</p>
-        </div>
+      <div class="container mx-auto px-6 text-center">
+        <div class="divider mb-8"></div>
+        <p class="text-gray-400 mb-4">
+          Our team members' individual opinions do not reflect the entire team
+          or PROJECT Spellforged as a whole.
+        </p>
+        <p class="text-gray-400">
+          © 2025 PROJECT Spellforged. All rights reserved.
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
