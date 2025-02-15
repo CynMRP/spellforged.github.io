@@ -130,20 +130,20 @@
             </div>
           </div>
           <div class="space-y-6">
-            <div class="feature-card rounded-lg p-6">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('warrior')">
               <h4 class="medieval-font text-xl font-bold mb-2">Warrior</h4>
               <p class="text-gray-300">
                 Masters of close combat, wielding heavy weapons with devastating
                 effect.
               </p>
             </div>
-            <div class="feature-card rounded-lg p-6">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('mage')">
               <h4 class="medieval-font text-xl font-bold mb-2">Mage</h4>
               <p class="text-gray-300">
-                Harness powerful magic to destroy enemies and support allies.
+                  Harness powerful magic to destroy enemies and support allies.
               </p>
-            </div>
-            <div class="feature-card rounded-lg p-6">
+          </div>
+          <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('ranger')">
               <h4 class="medieval-font text-xl font-bold mb-2">Ranger</h4>
               <p class="text-gray-300">
                 Expert marksmen who excel at ranged combat and mobility.
@@ -274,115 +274,163 @@
       </div>
     </footer>
 
-    <div id="devModal" class="fixed inset-0 z-50 hidden">
-      <div
-        class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"
-      ></div>
-
+    <div id="devModal" class="fixed inset-0 z-50 hidden transition-all duration-300 ease-in-out opacity-0">
+      <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
+  
       <div class="fixed inset-0 flex items-center justify-center p-4">
-        <div
-          class="relative bg-gray-900 rounded-lg w-full max-w-lg transform transition-all"
-        >
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg opacity-20 blur"
-          ></div>
-
-          <div class="relative bg-gray-900 rounded-lg p-1">
-            <div class="bg-gray-900 rounded-lg p-6 relative">
-              <!-- Close button -->
-              <button
-                onclick="closeModal()"
-                class="absolute top-4 right-4 text-gray-400 hover:text-white transition group"
-              >
-                <div
-                  class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity"
-                ></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-
-              <div class="text-center">
-                <div
-                  class="w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mb-6"
-                ></div>
-
-                <h3 class="medieval-font text-3xl font-bold mb-6 gradient-text">
-                  IN DEVELOPMENT
-                </h3>
-
-                <p class="text-gray-300 mb-8 leading-relaxed">
-                  The server is currently in development. Join our Discord
-                  community to follow development updates, contribute ideas, and
-                  connect with fellow adventurers eager to explore the world of
-                  PROJECT Spellforged.
-                </p>
-
-                <a
-                  href="https://discord.gg/jJVEYpW"
-                  class="group relative inline-flex justify-center items-center w-full"
-                >
-                  <div
-                    class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-20 rounded-lg blur-md transition-opacity"
-                  ></div>
-                  <div
-                    class="relative bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-lg transition-all transform group-hover:scale-[1.02] w-full"
-                  >
-                    <span class="flex items-center justify-center space-x-2">
-                      <svg
-                        class="w-6 h-6"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"
-                        />
-                      </svg>
-                      <span class="font-semibold">Join Our Discord</span>
-                    </span>
+          <div class="relative bg-gray-900 rounded-lg w-full max-w-lg transform transition-all duration-300 scale-95 opacity-0">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg opacity-10"></div>
+              
+              <div class="relative z-10 bg-gray-900 rounded-lg p-6">
+                  <button onclick="closeModal('devModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+  
+                  <div class="text-center">
+                      <div class="w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mb-6"></div>
+                      
+                      <h3 class="text-3xl font-bold mb-6 gradient-text">IN DEVELOPMENT</h3>
+                      
+                      <p class="text-gray-300 mb-8 leading-relaxed">
+                          The server is currently in development. Join our Discord community to follow development updates, 
+                          contribute ideas, and connect with fellow adventurers eager to explore the world of PROJECT Spellforged.
+                      </p>
+  
+                      <a href="https://discord.gg/jJVEYpW" 
+                         class="inline-flex items-center justify-center w-full px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all transform hover:scale-[1.02]">
+                          <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                          </svg>
+                          Join Our Discord
+                      </a>
+  
+                      <!-- Bottom Decorative Line -->
+                      <div class="w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mt-6"></div>
                   </div>
-                </a>
-
-                <div
-                  class="w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mt-6"
-                ></div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
+  </div>
+
+  <div id="dynamicModal" class="fixed inset-0 z-50 hidden transition-all duration-300 ease-in-out opacity-0">
+    <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
+
+    <div class="fixed inset-0 flex items-center justify-center p-4">
+        <div class="relative bg-gray-900 rounded-lg w-full max-w-7xl max-h-[90vh] transform transition-all duration-300 scale-95 opacity-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg opacity-10"></div>
+            
+            <div class="relative z-10 bg-gray-900 rounded-lg p-6 h-full flex flex-col">
+                <button onclick="closeModal('dynamicModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="text-center">
+                    <div class="w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mb-6"></div>
+                    <div id="modalTitle" class="text-3xl font-bold mb-6 gradient-text"></div>
+                </div>
+
+                <div id="modalDescription" class="text-gray-300 leading-relaxed text-left overflow-y-auto custom-scrollbar">
+                </div>
+
+                <div class="text-center mt-6">
+                    <div class="w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto"></div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
     <script>
+      // Cache for modal content
+      let modalContent = null;
+
+      // Generic modal handling functions
+      function showModalWithContent(modalId, title, description) {
+        const modal = document.getElementById(modalId);
+        const modalContent = modal.querySelector('.max-w-7xl'); // Changed from max-w-lg
+        
+        // If this is a dynamic modal, set its content
+        if (title || description) {
+            const titleElement = modal.querySelector('#modalTitle');
+            const descriptionElement = modal.querySelector('#modalDescription');
+            if (titleElement && title) titleElement.innerHTML = title;
+            if (descriptionElement && description) descriptionElement.innerHTML = description;
+        }
+        
+        // Show and animate
+        modal.classList.remove('hidden');
+        void modal.offsetWidth; // Force reflow
+        modal.classList.add('opacity-100');
+        modalContent.classList.add('opacity-100', 'scale-100');
+        modalContent.classList.remove('scale-95');
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      const modalContent = modal.querySelector('.max-w-7xl'); // Changed from max-w-lg
+      
+      // Animate out
+      modal.classList.remove('opacity-100');
+      modalContent.classList.remove('opacity-100', 'scale-100');
+      modalContent.classList.add('scale-95');
+      
+      // Hide after animation
+      setTimeout(() => {
+          modal.classList.add('hidden');
+      }, 300);
+  }
+
+      // Specific modal functions
       function copyIP() {
-        const modal = document.getElementById("devModal");
-        modal.classList.remove("hidden");
+          showModalWithContent('devModal');
       }
 
-      function closeModal() {
-        const modal = document.getElementById("devModal");
-        modal.classList.add("hidden");
-      }
-
-      // Close modal when clicking outside
-      document
-        .getElementById("devModal")
-        .addEventListener("click", function (e) {
-          if (e.target === this) {
-            closeModal();
+      // Dynamic modal content handling
+      async function fetchModalContent() {
+          if (modalContent === null) {
+              try {
+                  const response = await fetch('/modals.json');
+                  const data = await response.json();
+                  modalContent = data.modals;
+              } catch (error) {
+                  console.error('Error loading modal content:', error);
+              }
           }
-        });
+          return modalContent;
+      }
+
+      async function showModal(modalId) {
+          const content = await fetchModalContent();
+          if (!content || !content[modalId]) {
+              console.error('Modal content not found:', modalId);
+              return;
+          }
+          
+          showModalWithContent('dynamicModal', content[modalId].title, content[modalId].description);
+      }
+
+      // Event listeners
+      document.addEventListener('DOMContentLoaded', () => {
+          // Close modals when clicking outside
+          const modals = ['devModal', 'dynamicModal'];
+          modals.forEach(modalId => {
+              const modal = document.getElementById(modalId);
+              if (modal) {
+                  modal.addEventListener('click', function(e) {
+                      if (e.target === this) {
+                          closeModal(modalId);
+                      }
+                  });
+              }
+          });
+          
+          // Preload modal content
+          fetchModalContent();
+      });
     </script>
   </body>
 </html>
