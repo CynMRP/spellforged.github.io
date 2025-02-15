@@ -356,6 +356,7 @@
         const modal = document.getElementById(modalId);
         const modalContent = modal.querySelector('.max-w-lg, .max-w-7xl');
         
+        // If this is a dynamic modal, set its content
         if (title || description) {
             const titleElement = modal.querySelector('#modalTitle');
             const descriptionElement = modal.querySelector('#modalDescription');
@@ -363,6 +364,7 @@
             if (descriptionElement && description) descriptionElement.innerHTML = description;
         }
         
+        // Show and animate
         modal.classList.remove('hidden');
         void modal.offsetWidth; // Force reflow
         modal.classList.add('opacity-100');
@@ -387,7 +389,7 @@
 
       // Specific modal functions
       function copyIP() {
-          showModalWithContent('devModal');
+        showModalWithContent('devModal');
       }
 
       // Dynamic modal content handling
@@ -405,33 +407,35 @@
       }
 
       async function showModal(modalId) {
-          const content = await fetchModalContent();
-          if (!content || !content[modalId]) {
-              console.error('Modal content not found:', modalId);
-              return;
-          }
-          
-          showModalWithContent('dynamicModal', content[modalId].title, content[modalId].description);
-      }
+        try {
+            const response = await fetch(`/modals/${modalId}.html`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const content = await response.text();
+            
+            // Set the title based on modalId and content in modal
+            let title = modalId.charAt(0).toUpperCase() + modalId.slice(1); // Capitalize first letter
+            showModalWithContent('dynamicModal', title, content);
+        } catch (error) {
+            console.error('Error loading modal content:', error);
+        }
+    }
 
       // Event listeners
       document.addEventListener('DOMContentLoaded', () => {
-          // Close modals when clicking outside
-          const modals = ['devModal', 'dynamicModal'];
-          modals.forEach(modalId => {
-              const modal = document.getElementById(modalId);
-              if (modal) {
-                  modal.addEventListener('click', function(e) {
-                      if (e.target === this) {
-                          closeModal(modalId);
-                      }
-                  });
-              }
-          });
-          
-          // Preload modal content
-          fetchModalContent();
-      });
+        const modals = ['devModal', 'dynamicModal'];
+        modals.forEach(modalId => {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeModal(modalId);
+                    }
+                });
+            }
+        });
+    });
     </script>
   </body>
 </html>
