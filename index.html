@@ -352,12 +352,10 @@
       // Cache for modal content
       let modalContent = null;
 
-      // Generic modal handling functions
       function showModalWithContent(modalId, title, description) {
         const modal = document.getElementById(modalId);
-        const modalContent = modal.querySelector('.max-w-7xl'); // Changed from max-w-lg
+        const modalContent = modal.querySelector('.max-w-lg, .max-w-7xl');
         
-        // If this is a dynamic modal, set its content
         if (title || description) {
             const titleElement = modal.querySelector('#modalTitle');
             const descriptionElement = modal.querySelector('#modalDescription');
@@ -365,7 +363,6 @@
             if (descriptionElement && description) descriptionElement.innerHTML = description;
         }
         
-        // Show and animate
         modal.classList.remove('hidden');
         void modal.offsetWidth; // Force reflow
         modal.classList.add('opacity-100');
@@ -375,7 +372,7 @@
 
     function closeModal(modalId) {
       const modal = document.getElementById(modalId);
-      const modalContent = modal.querySelector('.max-w-7xl'); // Changed from max-w-lg
+      const modalContent = modal.querySelector('.max-w-lg, .max-w-7xl');
       
       // Animate out
       modal.classList.remove('opacity-100');
