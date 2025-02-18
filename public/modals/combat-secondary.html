@@ -1,0 +1,107 @@
+<div class='space-y-6'>
+  <div class='grid md:grid-cols-5 gap-6'>
+    <div class='space-y-6 flex flex-col justify-center items-center text-center md:col-span-2'>
+      <div>
+        <h3 class='font-bold text-2xl mb-4 text-blue-400'>Secondary Combat Actions</h3>
+        <br>
+        <br>
+        <hr>
+        <p class='text-lg'>
+          <span class='font-bold'>Combat Actions:</span>
+          <span class='text-blue-400'>Parrying, Shielding, Dashing, Healing</span>
+        </p>
+        <p class='mt-2'>In addition to the numerous skills at your disposal, you will also have access to secondary combat actions depending on your specialization and role.</p>
+      </div>
+    </div>
+    <div class='rpg-border rounded-lg overflow-hidden h-full flex items-center md:col-span-3'>
+      <video class='w-full object-cover aspect-square' style='min-height: 400px;' autoplay loop muted playsinline>
+        <source src='/imgs/sprint_dashing.mp4' type='video/mp4'>
+      </video>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class='mt-8'>
+    <h4 class='font-bold text-2xl mb-6 text-blue-400'>Combat Action Types</h4>
+    <div class='overflow-x-auto'>
+      <div class='bg-gray-900 bg-opacity-40 rounded-lg p-1'>
+        <table class='w-full'>
+          <thead class='bg-gray-800 text-left rounded-t-lg overflow-hidden'>
+            <tr>
+              <th class='p-4 text-blue-400 font-bold border-b border-gray-700'>Combat Action</th>
+              <th class='p-4 text-blue-400 font-bold border-b border-gray-700'>Role</th>
+              <th class='p-4 text-blue-400 font-bold border-b border-gray-700'>Description</th>
+            </tr>
+          </thead>
+          <tbody class='text-gray-300'>
+            <tr class='bg-gray-800 bg-opacity-30 hover:bg-gray-700 hover:bg-opacity-30 transition duration-150'>
+              <td class='p-4 font-bold text-white'>
+                <div class='flex items-center'>
+                  <div class='w-8 h-8 flex items-center justify-center rounded-full bg-red-800 mr-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  Parrying
+                </div>
+              </td>
+              <td class='p-4'>
+                <span class='px-3 py-1 rounded-full bg-red-900 bg-opacity-50 text-red-200 font-medium'>DPS</span>
+              </td>
+              <td class='p-4'>Parrying allows you to block an incoming attack to significantly reduce its damage, and then following up immediately with a counterattack.</td>
+            </tr>
+            <tr class='hover:bg-gray-700 hover:bg-opacity-30 transition duration-150'>
+              <td class='p-4 font-bold text-white'>
+                <div class='flex items-center'>
+                  <div class='w-8 h-8 flex items-center justify-center rounded-full bg-blue-800 mr-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  Shielding
+                </div>
+              </td>
+              <td class='p-4'>
+                <span class='px-3 py-1 rounded-full bg-blue-900 bg-opacity-50 text-blue-200 font-medium'>Tanks</span>
+              </td>
+              <td class='p-4'>Shielding allows you to continuously block hits in exchange for being unable to perform most other actions. However, as a tank, it is extremely helpful to allow you to stand your ground.</td>
+            </tr>
+            <tr class='bg-gray-800 bg-opacity-30 hover:bg-gray-700 hover:bg-opacity-30 transition duration-150'>
+              <td class='p-4 font-bold text-white'>
+                <div class='flex items-center'>
+                  <div class='w-8 h-8 flex items-center justify-center rounded-full bg-green-800 mr-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  Healing
+                </div>
+              </td>
+              <td class='p-4'>
+                <span class='px-3 py-1 rounded-full bg-green-900 bg-opacity-50 text-green-200 font-medium'>Supports</span>
+              </td>
+              <td class='p-4'>Healing is a short cooldown action available to all support roles, allowing you to heal a single ally or a group of allies around you. This is in addition to other, more powerful support and healing skills.</td>
+            </tr>
+            <tr class='hover:bg-gray-700 hover:bg-opacity-30 transition duration-150'>
+              <td class='p-4 font-bold text-white'>
+                <div class='flex items-center'>
+                  <div class='w-8 h-8 flex items-center justify-center rounded-full bg-purple-800 mr-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  Dashing
+                </div>
+              </td>
+              <td class='p-4'>
+                <span class='px-3 py-1 rounded-full bg-purple-900 bg-opacity-50 text-purple-200 font-medium'>All</span>
+              </td>
+              <td class='p-4'>Dashing grants you a short burst of speed in order to quickly dodge an incoming attack, which can be the main determinant in a life or death situation.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
