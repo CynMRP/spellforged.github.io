@@ -13,38 +13,114 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .feature-card {
+        position: relative;
+        z-index: 5;
+      }
+      .feature-card:hover {
+        z-index: 5;
+      }
+      nav {
+        position: fixed;
+        z-index: 1000 !important;
+      }
+    </style>
   </head>
   <body class="text-white">
     <nav
-      class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg rpg-border"
-    >
-      <div class="container mx-auto px-6 py-4">
-        <div class="flex items-center justify-between">
-          <div class="text-1xl font-bold gradient-text modern-title">
-            PROJECT Spellforged
-          </div>
-          <div class="hidden md:flex space-x-8">
-            <a href="../#features" class="hover:text-blue-400 transition"
-              >Features</a
-            >
-            <a href="../#classes" class="hover:text-blue-400 transition"
-              >Classes</a
-            >
-            <a href="../#combat" class="hover:text-blue-400 transition"
-              >Combat</a
-            >
-            <a href="../#items" class="hover:text-blue-400 transition">Items</a>
-            <a href="/faq/" class="hover:text-blue-400 transition">FAQ</a>
-            <a href="/apply/" class="hover:text-blue-400 transition">Apply</a>
-            <a
-              href="https://discord.gg/jJVEYpW"
-              class="glow-effect bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg transition"
-              >Join Discord</a
-            >
-          </div>
-        </div>
+  class="fixed w-full z-[1000] bg-blue-900 bg-opacity-75 backdrop-filter backdrop-blur-lg rpg-border"
+  style="z-index: 1000 !important;"
+>
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <div class="text-1xl font-bold gradient-text modern-title">
+        PROJECT Spellforged
       </div>
-    </nav>
+      <div class="hidden md:flex items-center space-x-4">
+        <a
+          href="../#features"
+          class="flex items-center space-x-2 px-3 py-2 rounded-lg border border-blue-400 hover:bg-blue-800 hover:text-blue-300 transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+          <span>Features</span>
+        </a>
+        <a
+          href="../#classes"
+          class="flex items-center space-x-2 px-3 py-2 rounded-lg border border-blue-400 hover:bg-blue-800 hover:text-blue-300 transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Classes</span>
+        </a>
+        <a
+          href="../#combat"
+          class="flex items-center space-x-2 px-3 py-2 rounded-lg border border-blue-400 hover:bg-blue-800 hover:text-blue-300 transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <span>Combat</span>
+        </a>
+        <a
+          href="../#items"
+          class="flex items-center space-x-2 px-3 py-2 rounded-lg border border-blue-400 hover:bg-blue-800 hover:text-blue-300 transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+          </svg>
+          <span>Items</span>
+        </a>
+        <a
+          href="/faq/"
+          class="flex items-center space-x-2 px-3 py-2 rounded-lg border border-blue-400 hover:bg-blue-800 hover:text-blue-300 transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span>FAQ</span>
+        </a>
+        <a
+          href="/apply/"
+          class="flex items-center space-x-2 px-3 py-2 rounded-lg border border-blue-400 hover:bg-blue-800 hover:text-blue-300 transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+          <span>Apply</span>
+        </a>
+        <a
+          href="https://discord.gg/jJVEYpW"
+          class="flex items-center space-x-2 glow-effect bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg transition border border-indigo-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="white"
+            class="inline-block"
+          >
+            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914a.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z" />
+          </svg>
+          <span>Join Discord</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
 
     <section
       class="hero min-h-screen flex items-center justify-center text-center"
@@ -70,45 +146,19 @@
       </div>
     </section>
 
-    <section id="features" class="py-20 section-bg">
+    <section id="features" class="py-16 section-bg">
       <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold mb-16 text-center gradient-text">
-          Features
+        <h2 class="text-4xl font-bold mb-10 text-center gradient-text">
+          About
         </h2>
-        <hr />
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="feature-card rounded-lg p-8">
-            <h3 class="medieval-font text-2xl font-bold mb-4">
-              Immersive World
-            </h3>
-            <p class="text-gray-300">
-              Explore the vast world of Sira, a land teeming with magic and
-              adventures. Uncover lost treasures and face powerful foes.
-            </p>
-          </div>
-          <div class="feature-card rounded-lg p-8">
-            <h3 class="medieval-font text-2xl font-bold mb-4">
-              Deep Class System
-            </h3>
-            <p class="text-gray-300">
-              Choose from 5 unique classes with 3 specializations each. Master
-              over 100 skills and create your perfect playstyle.
-            </p>
-          </div>
-          <div class="feature-card rounded-lg p-8">
-            <h3 class="medieval-font text-2xl font-bold mb-4">
-              Dynamic Combat
-            </h3>
-            <p class="text-gray-300">
-              Experience fluid combat with features like dashing, shielding, and
-              parrying. Team up with others to tackle challenging foes.
-            </p>
-          </div>
-        </div>
+        <br><hr>
+        <center><p class="text-xl leading-relaxed text-gray-200">
+          <span class="medieval-font text-2xl font-bold text-blue-300">PROJECT Spellforged</span> is an upcoming open-world MMORPG Server for Minecraft: Java Edition. Hailing from unknown origins and no recollections of your past, explore the vast world of Sira, a land teeming with magic and adventures abound. Here, you will claim bountiful treasures, face off against overwhelming foes, and uncover the truths about this world and your origins.
+        </p></center>
       </div>
     </section>
 
-    <section id="classes" class="py-20 section-bg">
+    <section id="classes" class="py-16 section-bg">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold mb-16 text-center gradient-text">
           Classes
@@ -123,59 +173,54 @@
               providing ranged support from afar, there's a perfect class
               waiting for you.
             </p>
-            <div class="rpg-border rounded-lg overflow-hidden">
-              <video class="w-full" autoplay loop muted playsinline>
-                <source src="imgs/slayer.mp4" type="video/mp4" />
-              </video>
+            <div class="space-y-6">
+              <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('warrior')">
+                <h4 class="medieval-font text-xl font-bold mb-2">Warrior</h4>
+                <p class="text-gray-300">
+                  This is a class description
+                </p>
+              </div>
+              <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('mystic')">
+                <h4 class="medieval-font text-xl font-bold mb-2">Mystic</h4>
+                <p class="text-gray-300">
+                  This is a class description
+                </p>
+              </div>
+              <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('rogue')">
+                <h4 class="medieval-font text-xl font-bold mb-2">Rogue</h4>
+                <p class="text-gray-300">
+                  This is a class description
+                </p>
+              </div>
+              <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('caster')">
+                <h4 class="medieval-font text-xl font-bold mb-2">Caster</h4>
+                <p class="text-gray-300">
+                  This is a class description
+                </p>
+              </div>
+              <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('ranger')">
+                <h4 class="medieval-font text-xl font-bold mb-2">Ranger</h4>
+                <p class="text-gray-300">
+                  This is a class description
+                </p>
+              </div>
             </div>
           </div>
-          <div class="space-y-6">
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('warrior')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Warrior</h4>
-              <p class="text-gray-300">
-                This is a class description
-              </p>
-            </div>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('mystic')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Mystic</h4>
-              <p class="text-gray-300">
-                This is a class description
-              </p>
-          </div>
-          <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('rogue')">
-            <h4 class="medieval-font text-xl font-bold mb-2">Rogue</h4>
-            <p class="text-gray-300">
-              This is a class description
-            </p>
-        </div>
-        <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('caster')">
-          <h4 class="medieval-font text-xl font-bold mb-2">Caster</h4>
-          <p class="text-gray-300">
-              HThis is a class description
-          </p>
-      </div>
-          <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('ranger')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Ranger</h4>
-              <p class="text-gray-300">
-                This is a class description
-              </p>
-            </div>
+          <div class="rpg-border rounded-lg overflow-hidden">
+            <video class="w-full" autoplay loop muted playsinline>
+              <source src="imgs/slayer.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="combat" class="py-20 section-bg">
+    <section id="combat" class="py-16 section-bg">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold mb-16 text-center gradient-text">
           Dynamic Combat
         </h2>
         <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="rpg-border rounded-lg overflow-hidden">
-            <video class="w-full" autoplay loop muted playsinline>
-              <source src="imgs/combat.mp4" type="video/mp4" />
-            </video>
-          </div>
           <div>
             <h3 class="medieval-font text-3xl font-bold mb-6">
               Epic Battles Await
@@ -185,46 +230,38 @@
               tactical gameplay. Team up with other players to tackle
               challenging world bosses and dungeons.
             </p>
-            <ul class="space-y-4 text-gray-300">
-              <li class="flex items-center">
-                <span class="text-blue-400 mr-2">→</span> Advanced combat
-                mechanics
-              </li>
-              <li class="flex items-center">
-                <span class="text-blue-400 mr-2">→</span> Unique skill
-                combinations
-              </li>
-              <li class="flex items-center">
-                <span class="text-blue-400 mr-2">→</span> Team-based challenges
-              </li>
-            </ul>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('combat-8skill')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-8skill')">
               <h4 class="medieval-font text-xl font-bold mb-2">8-skill Casting</h4>
               <p class="text-gray-300">
                 Excellent Flow & Efficiency
               </p>
             </div>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('combat-awakened')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-awakened')">
               <h4 class="medieval-font text-xl font-bold mb-2">Awakened Techniques</h4>
               <p class="text-gray-300">
                 Your Ultimate Move
               </p>
             </div>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('combat-secondary')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-secondary')">
               <h4 class="medieval-font text-xl font-bold mb-2">Secondary Combat Actions </h4>
               <p class="text-gray-300">
                 Description not found 404
               </p>
             </div>
           </div>
+          <div class="rpg-border rounded-lg overflow-hidden">
+            <video class="w-full" autoplay loop muted playsinline>
+              <source src="imgs/combat.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="items" class="py-20 section-bg">
+    <section id="items" class="py-16 section-bg">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold mb-16 text-center gradient-text">
           Expansive Item System
@@ -240,28 +277,28 @@
               In addition to the standard weapons and armor that you will find on your travels, there are some other key items and features that you should keep an eye out for. 
             </p>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('item-refinements')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('item-refinements')">
               <h4 class="medieval-font text-xl font-bold mb-2">Refinements</h4>
               <p class="text-gray-300">
                 Further Empowerment
               </p>
             </div>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('item-accessories')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('item-accessories')">
               <h4 class="medieval-font text-xl font-bold mb-2">Accessories</h4>
               <p class="text-gray-300">
                 Role-dependent Benefits
               </p>
             </div>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('coming')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('coming')">
               <h4 class="medieval-font text-xl font-bold mb-2">Enchantments</h4>
               <p class="text-gray-300">
                 Coming soon
               </p>
             </div>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('coming')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('coming')">
               <h4 class="medieval-font text-xl font-bold mb-2">Imbuements</h4>
               <p class="text-gray-300">
                 Coming soon
@@ -288,17 +325,12 @@
       </div>
     </section>
 
-    <section id="world" class="py-20 section-bg">
+    <section id="world" class="py-16 section-bg">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-bold mb-16 text-center gradient-text">
           Immersive World
         </h2>
         <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="rpg-border rounded-lg overflow-hidden">
-            <video class="w-full" autoplay loop muted playsinline>
-              <source src="imgs/immersive_world.mp4" type="video/mp4" />
-            </video>
-          </div>
           <div>
             <h3 class="medieval-font text-3xl font-bold mb-6">Explore Sira</h3>
             <p class="text-gray-300 mb-6">
@@ -306,20 +338,32 @@
               adventures. Discover hidden treasures, solve ancient puzzles, and
               uncover the secrets of your past.
             </p>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('world-handcrafted')">
+            <br>
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-handcrafted')">
               <h4 class="medieval-font text-xl font-bold mb-2">A Handcrafted World</h4>
-              <p class="text-gray-300">Historical yet Undiscovered</p>
+              <p class="text-gray-300">
+                Historical yet Undiscovered
+              </p>
             </div>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('world-activities')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-activities')">
               <h4 class="medieval-font text-xl font-bold mb-2">Open-World Activities</h4>
-              <p class="text-gray-300">Treasures Abound</p>
+              <p class="text-gray-300">
+                Treasures Abound
+              </p>
             </div>
             <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all" onclick="showModal('world-soundtracks')">
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-soundtracks')">
               <h4 class="medieval-font text-xl font-bold mb-2">Original Soundtracks</h4>
-              <p class="text-gray-300">Expertly Composed</p>
+              <p class="text-gray-300">
+                Expertly Composed
+              </p>
             </div>
+          </div>
+          <div class="rpg-border rounded-lg overflow-hidden">
+            <video class="w-full" autoplay loop muted playsinline>
+              <source src="imgs/immersive_world.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
@@ -374,7 +418,7 @@
       </div>
   </div>
 
-  <div id="dynamicModal" class="fixed inset-0 z-50 hidden transition-all duration-300 ease-in-out opacity-0">
+  <div id="dynamicModal" class="fixed inset-0 z-[90] hidden transition-all duration-300 ease-in-out opacity-0">
     <div class="absolute inset-0 bg-black bg-opacity-70 backdrop-blur-sm"></div>
 
     <div class="fixed inset-0 flex items-center justify-center p-4">
