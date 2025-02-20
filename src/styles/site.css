@@ -30,6 +30,13 @@ hr {
   margin: -3rem 0 2rem 0;
 }
 
+.hr-left-to-right {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, transparent);
+  margin: -3rem 0 2rem 0;
+}
+
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
