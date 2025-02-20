@@ -165,29 +165,114 @@
           Overview
         </h2>
         <br><hr>
-        <center><p class="text-2xl leading-relaxed text-gray-200">
-          <span class="medieval-font text-3xl text-blue-300">PROJECT Spellforged</span> 
+        <center><p class="text-xl leading-relaxed text-gray-200">
+          <span class="medieval-font text-2xl text-blue-300">PROJECT Spellforged</span> 
           is an upcoming open-world MMORPG Server for Minecraft: Java Edition. 
           Hailing from unknown origins and no recollections of your past, 
           explore the vast world of Sira, a land teeming with magic and adventures abound. 
-          Here, you will claim bountiful treasures, face off against overwhelming foes, 
+          Here, you will claim bountiful treasures,
+          wield and master powerful abilities,
           and uncover the truths about this world and your origins.
         </p></center>
       </div>
     </section>
 
-    <section id="classes" class="py-5 section-bg">
+    <section id="world" class="py-5 section-bg">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="medieval-font text-3xl font-bold mb-6">A Vast, Immersive World</h3>
+            <br><br><hr>
+            <p class="text-gray-300 mb-6 text-xl">
+              Explore the world of Sira, the setting of your long journey. 
+              Discover lost treasures, take part in various open-world challenges, 
+              and experience numerous stories that slowly unravel this world's deep history and intricacies.
+            </p>
+            <br>
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-handcrafted')">
+              <h4 class="medieval-font text-xl font-bold mb-2">A Handcrafted World</h4>
+              <p class="text-gray-300">
+                Historical yet Undiscovered
+              </p>
+            </div>
+            <br>
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-activities')">
+              <h4 class="medieval-font text-xl font-bold mb-2">Open-World Activities</h4>
+              <p class="text-gray-300">
+                Treasures Abound
+              </p>
+            </div>
+            <br>
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-soundtracks')">
+              <h4 class="medieval-font text-xl font-bold mb-2">Original Soundtracks</h4>
+              <p class="text-gray-300">
+                Professional, hand-crafted music that serve to enhance every moment of your journey.
+              </p>
+            </div>
+          </div>
+          <div class="rpg-border rounded-lg overflow-hidden">
+            <video class="w-full" autoplay loop muted playsinline>
+              <source src="imgs/immersive_world.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="combat" class="py-8 section-bg">
       <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 class="medieval-font text-3xl font-bold mb-6">
-              Classes & Specializations
+              Unparalleled Combat
+            </h3>
+            <br><br><hr>
+            <p class="text-gray-300 mb-6 text-xl">
+              Experience a combat system like no other with unique skills and tactical gameplay. 
+              Once prepared, team up with other players to tackle challenging foes, designed to test the limits of you and your party.
+            </p>
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-8skill')">
+              <h4 class="medieval-font text-xl font-bold mb-2">Versatile Casting</h4>
+              <p class="text-gray-300">
+                Excellent Flow & Efficiency
+              </p>
+            </div>
+            <br>
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-awakened')">
+              <h4 class="medieval-font text-xl font-bold mb-2">Awakened Techniques</h4>
+              <p class="text-gray-300">
+                Your Ultimate Move
+              </p>
+            </div>
+            <br>
+            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-secondary')">
+              <h4 class="medieval-font text-xl font-bold mb-2">Secondary Combat Actions </h4>
+              <p class="text-gray-300">
+                Description not found 404
+              </p>
+            </div>
+          </div>
+          <div class="rpg-border rounded-lg overflow-hidden">
+            <video class="w-full" autoplay loop muted playsinline>
+              <source src="imgs/combat.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="py-8 section-bg">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="medieval-font text-3xl font-bold mb-6">
+              Diverse Class System
             </h3>
             <br><br><hr>
             <p class="text-gray-300 mb-6 text-xl">
               Your journeys will not be without growth. Choose from 5 classes - 
               each with 3 specializations - and over 100 skills to use against 
-              your enemies.
+              your enemies. Each one has a unique playstyle that aims to fulfill your class fantasy.
             </p>
             <div class="space-y-6">
               <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('warrior')">
@@ -225,49 +310,6 @@
           <div class="rpg-border rounded-lg overflow-hidden">
             <video class="w-full" autoplay loop muted playsinline>
               <source src="imgs/slayer.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="combat" class="py-8 section-bg">
-      <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 class="medieval-font text-3xl font-bold mb-6">
-              Unparalleled Combat
-            </h3>
-            <br><br><hr>
-            <p class="text-gray-300 mb-6 text-xl">
-              Experience a combat system like no other with unique skills, combat and tactical gameplay. 
-              Team up with other players to tackle
-              challenging foes designed to test the limits of you and your party.
-            </p>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-8skill')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Versatile Casting</h4>
-              <p class="text-gray-300">
-                Excellent Flow & Efficiency
-              </p>
-            </div>
-            <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-awakened')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Awakened Techniques</h4>
-              <p class="text-gray-300">
-                Your Ultimate Move
-              </p>
-            </div>
-            <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-secondary')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Secondary Combat Actions </h4>
-              <p class="text-gray-300">
-                Description not found 404
-              </p>
-            </div>
-          </div>
-          <div class="rpg-border rounded-lg overflow-hidden">
-            <video class="w-full" autoplay loop muted playsinline>
-              <source src="imgs/combat.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -331,48 +373,6 @@
                 alt="Item showcase 2"
               />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="world" class="py-8 section-bg">
-      <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 class="medieval-font text-3xl font-bold mb-6">A Vast, Immersive World</h3>
-            <br><br><hr>
-            <p class="text-gray-300 mb-6 text-xl">
-              Explore the lands of Sira, a world of magic and adventure. 
-              Discover lost treasures, take part in various open-world challenges, 
-              and experience numerous stories that slowly unravel this world's deep history.
-            </p>
-            <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-handcrafted')">
-              <h4 class="medieval-font text-xl font-bold mb-2">A Handcrafted World</h4>
-              <p class="text-gray-300">
-                Historical yet Undiscovered
-              </p>
-            </div>
-            <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-activities')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Open-World Activities</h4>
-              <p class="text-gray-300">
-                Treasures Abound
-              </p>
-            </div>
-            <br>
-            <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-soundtracks')">
-              <h4 class="medieval-font text-xl font-bold mb-2">Original Soundtracks</h4>
-              <p class="text-gray-300">
-                Professional, hand-crafted music that serve to enhance every moment of your journey.
-              </p>
-            </div>
-          </div>
-          <div class="rpg-border rounded-lg overflow-hidden">
-            <video class="w-full" autoplay loop muted playsinline>
-              <source src="imgs/immersive_world.mp4" type="video/mp4" />
-            </video>
           </div>
         </div>
       </div>
