@@ -72,6 +72,15 @@ hr {
     transform: scale(1.1) rotate(-2deg);
   }
 
+  .media-modal-open {
+    overflow: hidden;
+}
+.media-modal-open nav,
+.media-modal-open .feature-card,
+.media-modal-open button {
+    z-index: auto !important;
+}
+
 @keyframes float {
   0%,
   100% {

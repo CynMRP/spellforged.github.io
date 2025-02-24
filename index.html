@@ -451,8 +451,106 @@
     </div>
 </div>
 
+<div id="mediaModal" class="fixed inset-0 z-[9999] hidden transition-all duration-300 ease-in-out opacity-0">
+  <div class="absolute inset-0 bg-black bg-opacity-90 backdrop-blur-sm"></div>
+  
+  <div class="fixed inset-0 flex items-center justify-center p-4">
+      <div class="relative max-w-7xl max-h-[90vh] transform transition-all duration-300 scale-95 opacity-0">
+          <button onclick="closeMediaModal()" class="absolute -top-10 right-0 text-gray-400 hover:text-white transition z-[10000]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+          </button>
+          
+          <div id="mediaContainer" class="relative z-[10000]">
+              <!-- Media content will be inserted here -->
+          </div>
+      </div>
+  </div>
+</div>
+
     <script>
-      // Cache for modal content
+
+    function showMediaModal(mediaType, source) {
+        const modal = document.getElementById('mediaModal');
+        const container = document.getElementById('mediaContainer');
+        const modalContent = modal.querySelector('.max-w-7xl');
+        
+        // Clear previous content
+        container.innerHTML = '';
+        
+        if (mediaType === 'image') {
+            const img = document.createElement('img');
+            img.src = source;
+            img.className = 'max-h-[80vh] max-w-full object-contain';
+            container.appendChild(img);
+        } else if (mediaType === 'video') {
+            const video = document.createElement('video');
+            video.src = source;
+            video.className = 'max-h-[80vh] max-w-full';
+            video.controls = true;
+            container.appendChild(video);
+        }
+        
+        // Show and animate
+        modal.classList.remove('hidden');
+        document.body.classList.add('media-modal-open');
+        void modal.offsetWidth; // Force reflow
+        modal.classList.add('opacity-100');
+        modalContent.classList.add('opacity-100', 'scale-100');
+        modalContent.classList.remove('scale-95');
+    }
+
+    function closeMediaModal() {
+        const modal = document.getElementById('mediaModal');
+        const modalContent = modal.querySelector('.max-w-7xl');
+        
+        // Animate out
+        modal.classList.remove('opacity-100');
+        modalContent.classList.remove('opacity-100', 'scale-100');
+        modalContent.classList.add('scale-95');
+        
+        // Hide after animation
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            document.body.classList.remove('media-modal-open');
+            // Stop video if playing
+            const video = modal.querySelector('video');
+            if (video) video.pause();
+        }, 300);
+    }
+
+    // Add click handlers to all images and videos
+    document.addEventListener('DOMContentLoaded', () => {
+        // Handle images
+        document.querySelectorAll('.item-hover img').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => showMediaModal('image', img.src));
+        });
+        
+        // Handle videos
+        document.querySelectorAll('video').forEach(video => {
+            video.style.cursor = 'pointer';
+            // Create a clone of the video for the modal to avoid state issues
+            video.addEventListener('click', () => showMediaModal('video', video.querySelector('source').src));
+        });
+        
+        // Close modal when clicking outside
+        const mediaModal = document.getElementById('mediaModal');
+        mediaModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeMediaModal();
+            }
+        });
+
+        // Add ESC key handler
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !mediaModal.classList.contains('hidden')) {
+                closeMediaModal();
+            }
+        });
+    });
+
       let modalContent = null;
 
       function showModalWithContent(modalId, title, description) {
