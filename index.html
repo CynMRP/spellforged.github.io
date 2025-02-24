@@ -47,12 +47,9 @@
 >
   <div class="container mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
-      <a
-      href="..">
-      <div class="text-2xl font-bold gradient-text medieval-font">
+      <div class="text-1xl font-bold gradient-text modern-title">
         PROJECT Spellforged
       </div>
-    </a>
       <div class="hidden md:flex items-center space-x-4">
         <a
           href="../#world"
@@ -170,9 +167,9 @@
         <br><hr style="height: 2px;">
         <center><p class="text-xl leading-relaxed text-gray-200">
           <span class="text-2xl text-blue-300">PROJECT Spellforged</span> 
-          is an upcoming open-world MMORPG Server for Minecraft: Java Edition.
+          is an upcoming open-world MMORPG Server for Minecraft: Java Edition. 
           Hailing from mysterious origins and having no recollections of your past, 
-          journey through a vast world that's teeming with adventure, and filled with many stories that have yet to be told.
+          you will explore Sira: A storied world teeming with boundless adventure, and filled with many wonders and mysteries yet to be uncovered.
         </p></center>
       </div>
     </section>
@@ -184,13 +181,14 @@
             <h3 class="text-3xl font-bold mb-6">A Vast, Immersive World</h3>
             <br><br><hr class="hr-left-to-right">
             <p class="text-gray-300 mb-6 text-xl">
-              <span class="text-blue-300">The setting of your long journey takes place in the world of Sira. </span>
-              Explore the many regions and nations across the world, take part in open-world activities to claim various treasures,
+              The setting of your long journey takes place in the vast lands of Sira. 
+              Take part in open-world activities to claim various treasures,
+              explore the many regions and nations across the world,
               and experience the numerous stories that will slowly unravel the truths of this world and your origins.
             </p>
             <br>
             <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-handcrafted')">
-              <h4 class="medieval-font text-xl font-bold mb-2">World Structure & Features</h4>
+              <h4 class="medieval-font text-xl font-bold mb-2">A Handcrafted World</h4>
               <p class="text-gray-300">
                 Historical yet Undiscovered
               </p>
@@ -206,7 +204,7 @@
             <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('world-soundtracks')">
               <h4 class="medieval-font text-xl font-bold mb-2">Original Soundtracks</h4>
               <p class="text-gray-300">
-                Professional, hand-crafted music that serve to accent every moment of your journey.
+                Professional, hand-crafted music that serve to enhance every moment of your journey.
               </p>
             </div>
           </div>
@@ -228,7 +226,7 @@
             </h3>
             <br><br><hr class="hr-left-to-right">
             <p class="text-gray-300 mb-6 text-xl">
-              <span class="text-blue-300">Experience combat gameplay found nowhere else, ranging from fast-paced playstyles to tactical execution.</span>
+              Experience a combat system like no other with unique skills and tactical gameplay. 
               Once acquainted, team up with other players to tackle challenging foes, designed to test the limits of you and your party.
             </p>
             <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('combat-8skill')">
@@ -270,8 +268,9 @@
             </h3>
             <br><br><hr class="hr-left-to-right">
             <p class="text-gray-300 mb-6 text-xl">
-              <span class="text-blue-300">Choose from 5 classes, 15 specializations, and over 100 skills to learn and use against your enemies.</span> 
-              Each one claims a unique playstyle that aims to fulfill a specific class fantasy, such as rune-drawing Sorcerers and hyper fast Twilights.
+              Your journeys will not be without growth. Choose from 5 classes to level up - 
+              each with 3 specializations - and use over 100 skills against 
+              your enemies. Each specialization has a unique playstyle that aims to fulfill your class fantasy.
             </p>
             <div class="space-y-6">
               <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('warrior')">
@@ -289,13 +288,13 @@
               <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('caster')">
                 <h4 class="medieval-font text-xl font-bold mb-2">Caster</h4>
                 <p class="text-gray-300">
-                  Magic conjurers that harness their power into a weapon focus of their choosing, then unleashing it upon their foes either up close or from afar.
+                  Magic conjurers that focus their power into a weapon focus of their choosing, then unleashing it upon their foes either up close or from afar.
                 </p>
               </div>
               <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('rogue')">
                 <h4 class="medieval-font text-xl font-bold mb-2">Rogue</h4>
                 <p class="text-gray-300">
-                  Agile combatants who aim to eliminate their enemies as swiftly as possible by using a variety of dexterous techniques.
+                  Agile combatants who aim to eliminate their enemies as swiftly as possible by using a variety of dexterous techniques and combos.
                 </p>
               </div>
               <div class="feature-card rounded-lg p-6 cursor-pointer hover:transform hover:scale-105 transition-all z-10" onclick="showModal('mystic')">
@@ -522,11 +521,6 @@
 
     // Add click handlers to all images and videos
     document.addEventListener('DOMContentLoaded', () => {
-        // Handle images
-        document.querySelectorAll('.item-hover img').forEach(img => {
-            img.style.cursor = 'pointer';
-            img.addEventListener('click', () => showMediaModal('image', img.src));
-        });
         
         // Handle videos
         document.querySelectorAll('video').forEach(video => {
