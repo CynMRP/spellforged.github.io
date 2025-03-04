@@ -8,10 +8,10 @@
         <hr>
         <p class='mt-2'>With how deeply designed each specialization is, 
           it demands a casting system that allows its many skills to be used without any tradeoffs.
+          To accomplish this, our casting system makes use of 8 skill keybinds, and skills that transform into auxillary skills 
+          when certain requirements are met. Left Click and Right Click can also transform into these skills.
         </p>
-        <p class='mt-2'>To accomplish this, our casting system makes use of 8 skill keybinds, and skills that transform into auxillary skills 
-          when certain requirements are met. Some skills will even transform your Left Click and Right Click buttons into auxillary skills temporarily.
-        <p class='mt-2'><span class="font-bold">You can expect to have 9 to 10 skill keybinds to use at a time, 
+        <p class='mt-2'>As a result, <span class="font-bold">you can expect to have 9 to 10 skill keybinds to use at a time, 
           but your total skill count can number more than that.</span> This results in a unique setup that allows for a specialization to have a large number of skills 
         available to them consistently, which in turn allows for further unique gameplay and complexity.</p>
       </div>
@@ -22,11 +22,94 @@
       </video>
     </div>
   </div>
-  
+
+  <hr>
+
+  <div class='relative mb-5 text-center'>
+    <h4 class='font-bold text-2xl text-blue-400 relative z-10 inline-block'>Auxillary Skills</h4>
+    <div class='absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent'></div>
+  </div>
+  <p class='text-gray-300 mb-4 text-center text-lg'>Unassignable skills that become available when other skills transform into them after meeting certain requirements.</p>
+  <div class='grid md:grid-cols-3 gap-6'>
+        
+    <div class='feature-card rounded-lg p-4'>
+      <h5 class='font-bold text-lg text-blue-300'>Kindled Flourish</h5>
+      <h6 class='text-lg mb-2 text-blue-300'>Slayer Skill</h6>
+      <p class='text-gray-300 mb-4'>Slash upwards around you, dealing Physical Fire Damage.
+        <br>
+        <br>
+        ※ Right Click transforms into Kindled Flourish after using all Searing skills or Blazing skills.
+        <br>
+        ※ Kindled Flourish is followed up by Burning Flourish.
+      </p>
+
+      <div class='grid grid-cols-1 gap-2 text-sm'>
+        <table class='w-full'>
+          <tbody class='text-gray-300'>
+            <tr class='bg-gray-800 bg-opacity-30 hover:bg-gray-700 hover:bg-opacity-30 transition duration-150'>
+              <th class='p-4 font-bold text-white'>Radius</th>
+              <td class='p-4'>5 blocks (Circle)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class='feature-card rounded-lg p-4'>
+      <h5 class='font-bold text-lg text-blue-300'>Write: Fire</h5>
+      <h6 class='text-lg mb-2 text-blue-300'>Sorcerer Skill</h6>
+      <p class='text-gray-300 mb-4'>
+        Write a Fire rune, progressing Write: Origin.
+        <br>
+        <br>
+        ※ Flamebolt transforms into Write: Fire while in a rune drawing state.
+        <br>
+        ※ Write: Fire can only be used if the next rune to write is Fire.
+      </p>
+    </div>
+
+    <div class='feature-card rounded-lg p-4'>
+      <h5 class='font-bold text-lg text-blue-300'>Swirling Cannonball</h5>
+      <h6 class='text-lg mb-2 text-blue-300'>Spiritualist Skill</h6>
+      <p class='text-gray-300 mb-4'>
+        Lob a large ball of swirling water at the target location that bursts violently, dealing Magical Water Damage and additional Magical Water Damage per water droplet absorbed using Absorb.
+        <br>
+        <br>
+        Becomes unavailable on use.
+        <br>
+        <br>
+        Grants 1 Soul Bond.
+        <br>
+        <br>
+        ※ Send: Cannonball transforms into Swirling Cannonball after absorption mode ends.
+      </p>
+
+      <div class='grid grid-cols-1 gap-2 text-sm'>
+        <table class='w-full'>
+          <tbody class='text-gray-300'>
+            <tr class='bg-gray-800 bg-opacity-30 hover:bg-gray-700 hover:bg-opacity-30 transition duration-150'>
+              <th class='p-4 font-bold text-white'>Range</th>
+              <td class='p-4'>16 blocks</td>
+            </tr>
+            <tr class='bg-gray-800 bg-opacity-30 hover:bg-gray-700 hover:bg-opacity-30 transition duration-150'>
+              <th class='p-4 font-bold text-white'>Radius</th>
+              <td class='p-4'>6 blocks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
   <hr>
   
   <div class='mt-8'>
-    <h4 class='font-bold text-2xl mb-6 text-blue-400'>Skill Slot Combinations</h4>
+    <div class='relative mb-5 text-center'>
+      <h4 class='font-bold text-2xl text-blue-400 relative z-10 inline-block'>Skill Keybinds</h4>
+      <div class='absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent'></div>
+    </div>
+    <p class='text-gray-300 mb-4 text-center text-lg'>Below is a full list of all 8 skill keybinds and how you use them.</p>
     <div class='overflow-x-auto'>
       <div class='bg-gray-900 bg-opacity-40 rounded-lg p-1'>
         <table class='w-full'>
@@ -92,4 +175,5 @@
       </div>
     </div>
   </div>
+
 </div>
