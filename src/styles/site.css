@@ -64,12 +64,12 @@ hr {
   }
   
   .item-hover:hover {
-    transform: scale(1.1) rotate(2deg);
+    transform: scale(1.05) rotate(1deg);
     z-index: 10;
   }
   
   .item-hover:hover:nth-child(2n) {
-    transform: scale(1.1) rotate(-2deg);
+    transform: scale(1.05) rotate(-1deg);
   }
 
   .media-modal-open {
@@ -229,7 +229,7 @@ hr {
 }
 
 .rpg-border {
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-image:
     linear-gradient(#0a0a0f, #0a0a0f), 
     linear-gradient(45deg, #06b6d4, #0ea5e9); 
@@ -241,7 +241,7 @@ hr {
 .item-hover:hover .rpg-border,
 .rpg-border:has(img):hover,
 .rpg-border:has(video):hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
   cursor: pointer;
 }
@@ -250,7 +250,7 @@ img.rpg-border:hover,
 video.rpg-border:hover,
 .rpg-border > img:hover + .rpg-border,
 .rpg-border > video:hover + .rpg-border {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
   cursor: pointer;
 }
